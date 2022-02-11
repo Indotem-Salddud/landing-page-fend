@@ -1,6 +1,6 @@
 import React from "react";
 import "./SampleStyle.css";
-import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
+import TerciaryButton from "../components/Buttons/Primary/TerciaryButton";
 
 /**
  * ! Sample view project
@@ -12,7 +12,7 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Buttons component</h1>
         <div className="mt-3">
-          <PrimaryButton
+          <TerciaryButton
             title="Contact"
             handleClick={() => {
               console.log("He clickado en el botón Contacto");
