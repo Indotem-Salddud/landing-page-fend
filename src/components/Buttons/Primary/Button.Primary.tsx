@@ -13,7 +13,7 @@ type PrimaryButtonProps = PropTypes.InferProps<typeof PrimaryButtonProptypes>;
 
 /**
  * ! Primary button Component
- * * whitehatdevv - 2022/02/09
+ * * ricardodsb, stefaranzazu - 2022/02/11
  * @param props {any}
  */
 const PrimaryButton: React.FC<PrimaryButtonProps> = (props: any) => (
