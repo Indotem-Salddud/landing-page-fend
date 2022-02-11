@@ -1,6 +1,6 @@
 import React from "react";
 import "./SampleStyle.css";
-import TerciaryButton from "../components/Buttons/Primary/TerciaryButton";
+import TerciaryButton from "../components/Buttons/Terciary/TerciaryButton";
 
 /**
  * ! Sample view project
