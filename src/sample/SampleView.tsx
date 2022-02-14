@@ -2,6 +2,8 @@ import React from "react";
 import "./SampleStyle.css";
 import TertiaryButton from "../components/Buttons/Tertiary/TertiaryButton";
 
+
+/** texto de prueba */
 /**
  * ! Sample view project
  * * whitehatdevv - 2022/02/09
