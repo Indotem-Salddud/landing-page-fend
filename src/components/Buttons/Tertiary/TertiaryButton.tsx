@@ -12,7 +12,7 @@ const TertiaryButtonProptypes = {
 type TertiaryButtonProps = PropTypes.InferProps<typeof TertiaryButtonProptypes>;
 
 /**
- * ! Terciary button Component
+ * ! Tertiary button Component
  * * Carlos y Javi - 2022/02/11
  * @param props {any}
  */
