@@ -1,19 +1,34 @@
 export const Tokens = {
   Colors: {
     Buttons: {
-      Primary: "#fff",
-      Secondary: "#000",
+      Tertiary: "#732650"
     },
   },
   Borders: {
-    Radius: {},
+    Radius: {
+      TertiaryR: "10px"
+    },
   },
   Constraints: {
     Margin: {
       XSmall: "",
       Small: "",
       MediumSmall: "",
-    },
-    Padding: {},
+    }
   },
+  Text: {
+    Size: "20px",
+    Color: {
+      TertiaryR: "#732650"
+    },
+  },
+  Padding: {
+    TertiaryR: "16px 40px"
+  },
+  Height:{
+    Large:"66px"
+  },
+  Width:{
+    Large:"345px"
+  }
 };
