@@ -1,33 +1,33 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { TerciaryButtonStyled } from "./TerciaryButtonStyled";
+import { TertiaryButtonStyled } from "./TertiaryButtonStyled";
 
 // * Define proptypes
-const TerciaryButtonProptypes = {
+const TertiaryButtonProptypes = {
   title: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
 // * Define typealias for proptypes
-type TerciaryButtonProps = PropTypes.InferProps<typeof TerciaryButtonProptypes>;
+type TertiaryButtonProps = PropTypes.InferProps<typeof TertiaryButtonProptypes>;
 
 /**
- * ! Terciary button Component
+ * ! Tertiary button Component
  * * Carlos y Javi - 2022/02/11
  * @param props {any}
  */
-const TerciaryButton: React.FC<TerciaryButtonProps> = (props: any) => (
-  <TerciaryButtonStyled
+const TertiaryButton: React.FC<TertiaryButtonProps> = (props: any) => (
+  <TertiaryButtonStyled
     type="button"
     role="button"
     onClick={() => props.handleClick()}
   >
     {props.title}
-  </TerciaryButtonStyled>
+  </TertiaryButtonStyled>
 );
 
 // * Define proptypes
-TerciaryButton.propTypes = TerciaryButtonProptypes;
+TertiaryButton.propTypes = TertiaryButtonProptypes;
 
 // * Export component
-export default TerciaryButton;
+export default TertiaryButton;
