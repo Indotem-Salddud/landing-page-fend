@@ -1,6 +1,11 @@
 import React from "react";
+import QuaternaryButton from "../components/Buttons/Quaternary/ButtonQuaternary";
+import QuinaryButton from "../components/Buttons/Quinary/ButtonQuinary";
+import SenaryButton from "../components/Buttons/Senary/ButtonSenary";
+import SeptenaryButton from "../components/Buttons/Septenary/ButtonSeptenary";
+import TertiaryButton from "../components/Buttons/Tertiary/ButtonTertiary";
 import "./SampleStyle.css";
-import {AlterPrimaryButton, AlterSecondaryButton, AlterTertiaryButton, TertiaryButton, SeptenaryButton} from "../components/Buttons/Tertiary/Buttons";
+
 
 
 /** texto de prueba */
@@ -22,7 +27,7 @@ const SampleView: React.FC = () => {
           />
         </div>
         <div className="mt-3">
-          <AlterPrimaryButton
+          <QuaternaryButton
             title="Contact"
             handleClick={() => {
 
@@ -30,7 +35,7 @@ const SampleView: React.FC = () => {
           />
         </div>
         <div className="mt-3">
-          <AlterSecondaryButton
+          <QuinaryButton
             title="Contact"
             handleClick={() => {
 
@@ -38,7 +43,7 @@ const SampleView: React.FC = () => {
           />
         </div>
         <div className="mt-3">
-          <AlterTertiaryButton
+          <SenaryButton
             title="Contact"
             handleClick={() => {
 
