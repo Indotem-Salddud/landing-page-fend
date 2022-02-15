@@ -2,7 +2,7 @@ export const Tokens = {
   Colors: {
     Buttons: {
       Tertiary: "#732650",
-      TertiaryPressed:"#7F516A"
+      TertiaryPressed:"#F9F1F5"
     },
   },
   Borders: {
@@ -18,11 +18,11 @@ export const Tokens = {
     }
   },
   Text: {
+    Weight: "bold",
     Size: "20px",
     Color: {
       Tertiary: "#732650",
-      TertiaryPressed: "#F9F1F5"
-
+      TertiaryDisabled: "#C5ABB9"
     },
   },
   Padding: {

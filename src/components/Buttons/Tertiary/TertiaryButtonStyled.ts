@@ -6,6 +6,7 @@ export const TertiaryButtonStyled = styled.button`
   border: none;
   background: none;
   font-size: ${Tokens.Text.Size};
+  font-weight: ${Tokens.Text.Weight};
   color: ${Tokens.Text.Color.Tertiary};
   padding: ${Tokens.Padding.TertiaryP};
   heigth: ${Tokens.Height.Large};
@@ -13,8 +14,7 @@ export const TertiaryButtonStyled = styled.button`
   border-radius: ${Tokens.Borders.Radius.TertiaryR};
   &:active{
       background: ${Tokens.Colors.Buttons.TertiaryPressed};
-      color: ${Tokens.Text.Color.TertiaryPressed};
+      color: ${Tokens.Text.Color.Tertiary};
       border: none;}
- 
 `;
 
