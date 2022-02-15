@@ -47,6 +47,9 @@ export const Tokens = {
   },
   Width:{
     Large:"345px"
+  },
+   BoxShadow:{
+    Medium:"0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16)"
   }
   
 };

@@ -39,7 +39,7 @@ export const AlterPrimaryButtonStyled = styled.button`
    &:active{
       background: ${Tokens.Colors.Buttons.AlterPrimaryPressed};
       color: ${Tokens.Text.Color.AlterPrimary};
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16);}
+      box-shadow: ${Tokens.BoxShadow.Medium};}
    &:disabled{
       color: ${Tokens.Text.Color.AlterPrimaryDisabled};
    }
@@ -63,7 +63,7 @@ export const AlterSecondaryButtonStyled = styled.button`
   &:active{
       background: ${Tokens.Colors.Buttons.AlterSecondaryPressed};
       color: ${Tokens.Text.Color.AlterSecondary};
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16);}
+      box-shadow: ${Tokens.BoxShadow.Medium};}}
    &:disabled{
       color: ${Tokens.Text.Color.AlterSecondaryDisabled};
    }
