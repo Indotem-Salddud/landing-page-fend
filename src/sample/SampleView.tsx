@@ -1,6 +1,6 @@
 import React from "react";
 import "./SampleStyle.css";
-import TertiaryButton from "../components/Buttons/Tertiary/TertiaryButton";
+import {AlterPrimaryButton, AlterSecondaryButton, AlterTertiaryButton, TertiaryButton,} from "../components/Buttons/Tertiary/Buttons";
 
 
 /** texto de prueba */
@@ -15,6 +15,30 @@ const SampleView: React.FC = () => {
         <h1>Buttons component</h1>
         <div className="mt-3">
           <TertiaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <AlterPrimaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <AlterSecondaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <AlterTertiaryButton
             title="Contact"
             handleClick={() => {
 
