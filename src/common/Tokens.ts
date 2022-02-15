@@ -2,15 +2,15 @@ export const Tokens = {
   Colors: {
     Buttons: {
       TertiaryPressed:"#F9F1F5",
-      AlterPrimary:"#7F516A",
-      AlterPrimaryPressed:"#A4708C",
-      AlterPrimaryHover:"#795769",
-      AlterPrimaryDisabled:"#EBE0E6",
-      AlterSecondary:"#E0D1DA",
-      AlterSecondaryPressed:"#EBE0E6",
-      AlterSecondaryHover:"#CEB6C3",
-      AlterSecondaryDisabled:"#EFE7EB",
-      AlterTertiaryPressed:"#F7F3F5"
+      Quaternary:"#7F516A",
+      QuaternaryPressed:"#A4708C",
+      QuaternaryHover:"#795769",
+      QuaternaryDisabled:"#EBE0E6",
+      Quinary:"#E0D1DA",
+      QuinaryPressed:"#EBE0E6",
+      QuinaryHover:"#CEB6C3",
+      QuinaryDisabled:"#EFE7EB",
+      SenaryPressed:"#F7F3F5"
     },
   },
   Borders: {
@@ -31,12 +31,12 @@ export const Tokens = {
     Color: {
       Tertiary: "#732650",
       TertiaryDisabled: "#C5ABB9",
-      AlterPrimary:"#FFFFFF",
-      AlterPrimaryDisabled:"#AE9EA7",
-      AlterSecondary:"#1C1C1F",
-      AlterSecondaryDisabled:"#B3B3B4",
-      AlterTertiary:"#1C1C1F",
-      AlterTertiaryDisabled:"#B3B3B4"
+      Quaternary:"#FFFFFF",
+      QuaternaryDisabled:"#AE9EA7",
+      Quinary:"#1C1C1F",
+      QuinaryDisabled:"#B3B3B4",
+      Senary:"#1C1C1F",
+      SenaryDisabled:"#B3B3B4"
     },
   },
   Padding: {
