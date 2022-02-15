@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Tokens } from "../../../common/Tokens";
 
 // * Styled primary button
@@ -16,5 +16,10 @@ export const TertiaryButtonStyled = styled.button`
       background: ${Tokens.Colors.Buttons.TertiaryPressed};
       color: ${Tokens.Text.Color.Tertiary};
       border: none;}
+   &:hover{
+      text-decoration: underline;}
+   &:disabled{
+      color: ${Tokens.Text.Color.TertiaryDisabled};
+   }
 `;
 
