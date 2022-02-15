@@ -1,6 +1,7 @@
 import React from "react";
 import "./SampleStyle.css";
 import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
+import SecondaryButton from "../components/Buttons/Secondary/Button.Secondary";
 
 /**
  * ! Sample view project
@@ -20,6 +21,15 @@ const SampleView: React.FC = () => {
           />
         </div>
       </div>
+      <div className="mt-3">
+        <h1>Secondary Button </h1>
+        <div>
+        <SecondaryButton title="Comment" handleClick={()=>
+            console.log("He clicado en el botton Contacto")
+        }>
+        </SecondaryButton>
+        </div>
+    </div>
     </>
   );
 };

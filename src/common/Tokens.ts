@@ -4,7 +4,11 @@ export const Tokens = {
       Primary:"#BF4085",
       PrimaryPressed:"#CB659C",
       PrimaryHover:"#A83875",
-      PrimaryDisabled:"#D192B4"
+      PrimaryDisabled:"#D192B4",
+      Secondary:"#F1DEE8",
+      SecondaryPressed:"#EBCBDD",
+      SecondaryHover:"#EBCBDD",
+      SecondaryDisabled:"#F4E7EE"
     },
   },
   Borders: {
@@ -24,7 +28,9 @@ export const Tokens = {
     Size: "20px",
     Color: {
       Primary: "#FFFFFF",
-      PrimaryDisabled: "#F7F7FC"
+      PrimaryDisabled: "#F7F7FC",
+      Secondary: "#732650;",
+      SecondaryDisabled: "#C5ABB9"
     },
   },
   Padding: {
