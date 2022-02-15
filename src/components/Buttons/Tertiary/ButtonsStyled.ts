@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Tokens } from "../../../common/Tokens";
+import quaternary_button1 from "../../../resources/static/quaternary_button1.png"
+
 
 // * Styled tertiary button
 export const TertiaryButtonStyled = styled.button` 
@@ -9,7 +11,7 @@ export const TertiaryButtonStyled = styled.button`
   font-weight: ${Tokens.Text.Weight};
   color: ${Tokens.Text.Color.Tertiary};
   padding: ${Tokens.Padding.Medium};
-  heigth: ${Tokens.Height.Large};
+  height: ${Tokens.Height.Large};
   width: ${Tokens.Width.Large};
   border-radius: ${Tokens.Borders.Radius.Medium};
   &:active{
@@ -30,7 +32,7 @@ export const AlterPrimaryButtonStyled = styled.button`
   font-weight: ${Tokens.Text.Weight};
   color: ${Tokens.Text.Color.AlterPrimary};
   padding: ${Tokens.Padding.Medium};
-  heigth: ${Tokens.Height.Large};
+  height: ${Tokens.Height.Large};
   width: ${Tokens.Width.Large};
   border-radius: ${Tokens.Borders.Radius.Medium};
    &:hover{
@@ -53,7 +55,7 @@ export const AlterSecondaryButtonStyled = styled.button`
   font-weight: ${Tokens.Text.Weight};
   color: ${Tokens.Text.Color.AlterSecondary};
   padding: ${Tokens.Padding.Medium};
-  heigth: ${Tokens.Height.Large};
+  height: ${Tokens.Height.Large};
   width: ${Tokens.Width.Large};
   border-radius: ${Tokens.Borders.Radius.Medium};
 &:hover{
@@ -63,7 +65,7 @@ export const AlterSecondaryButtonStyled = styled.button`
   &:active{
       background: ${Tokens.Colors.Buttons.AlterSecondaryPressed};
       color: ${Tokens.Text.Color.AlterSecondary};
-      box-shadow: ${Tokens.BoxShadow.Medium};}}
+      box-shadow: ${Tokens.BoxShadow.Medium};}
    &:disabled{
       color: ${Tokens.Text.Color.AlterSecondaryDisabled};
    }
@@ -77,7 +79,7 @@ export const AlterTertiaryButtonStyled = styled.button`
   font-weight: ${Tokens.Text.Weight};
   color: ${Tokens.Text.Color.AlterTertiary};
   padding: ${Tokens.Padding.Medium};
-  heigth: ${Tokens.Height.Large};
+  height: ${Tokens.Height.Large};
   width: ${Tokens.Width.Large};
   border-radius: ${Tokens.Borders.Radius.Medium};
    &:hover{
@@ -90,3 +92,9 @@ export const AlterTertiaryButtonStyled = styled.button`
    }
 `;
 
+// * Styled septenary button (whatsapp)
+export const SeptenaryButtonStyled = styled.button` 
+  width: ${Tokens.Icons.Width};
+  height: ${Tokens.Icons.Height};
+  background-image: ${quaternary_button1}
+`;

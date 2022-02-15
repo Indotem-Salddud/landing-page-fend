@@ -50,6 +50,16 @@ export const Tokens = {
   },
    BoxShadow:{
     Medium:"0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16)"
+  },
+  Icons:{
+    Width: {
+      Septenary: "72px",
+      Octonary: "64px"
+    },
+    Height: {
+      Septenary: "72px",
+      Octonary: "64px"
+    },
   }
   
 };

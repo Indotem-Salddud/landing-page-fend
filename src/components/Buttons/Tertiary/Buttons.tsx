@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { AlterPrimaryButtonStyled, AlterSecondaryButtonStyled, AlterTertiaryButtonStyled, TertiaryButtonStyled} from "./ButtonsStyled";
+import { AlterPrimaryButtonStyled, AlterSecondaryButtonStyled, AlterTertiaryButtonStyled, TertiaryButtonStyled, SeptenaryButtonStyled} from "./ButtonsStyled";
 
 
 // * Define proptypes
@@ -21,11 +21,17 @@ const AlterTertiaryButtonProptypes = {
   handleClick: PropTypes.func.isRequired,
 };
 
+const SeptenaryButtonProptypes = {
+  title: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
+
 // * Define typealias for proptypes
 type TertiaryButtonProps = PropTypes.InferProps<typeof TertiaryButtonProptypes>;
 type AlterPrimaryButtonProps = PropTypes.InferProps<typeof AlterPrimaryButtonProptypes>;
 type AlterSecondaryButtonProps = PropTypes.InferProps<typeof AlterSecondaryButtonProptypes>;
 type AlterTertiaryButtonProps = PropTypes.InferProps<typeof AlterTertiaryButtonProptypes>;
+type SeptenaryButtonProps = PropTypes.InferProps<typeof SeptenaryButtonProptypes>;
 
 /**
  * ! Tertiary button Component
@@ -95,10 +101,28 @@ export const AlterTertiaryButton: React.FC<AlterTertiaryButtonProps> = (props: a
   
 );
 
+/**
+ * ! Septenary button Component
+ * * Carlos y Javi - 2022/02/15
+ * @param props {any}
+ */
+ export const SeptenaryButton: React.FC<SeptenaryButtonProps> = (props: any) => (
+  <SeptenaryButtonStyled 
+    type="button"
+    role="button"
+    onClick={() => props.handleClick()}
+ 
+  >
+    {props.title}
+  </SeptenaryButtonStyled>
+  
+);
+
 
 // * Define proptypes
 TertiaryButton.propTypes = TertiaryButtonProptypes;
 AlterPrimaryButton.propTypes = AlterPrimaryButtonProptypes;
 AlterSecondaryButton.propTypes = AlterSecondaryButtonProptypes;
 AlterTertiaryButton.propTypes = AlterTertiaryButtonProptypes;
+SeptenaryButton.propTypes = SeptenaryButtonProptypes;
 
