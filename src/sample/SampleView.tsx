@@ -1,15 +1,15 @@
 import React from "react";
-import  "./SampleStyles.css"
-import SecondaryButton from "../component/Buttons/Secondary/Button.Secondary";
+import  "./SampleStyle.css"
+import SecondaryButton from "../components/Buttons/Secondary/Button.Secondary";
 
 /**
  *  ! Sample view project
- *  * gabriel -2022/2/12
+ *  * gabriel, ricardodsb, stefaranzazu -2022/2/15
  */
 const SampleView:React.FC=()=>{
     return <>
     <div className="mt-3">
-        <h1>Button Components</h1>
+        <h1>Secondary Button </h1>
         <div>
         <SecondaryButton title="Comment" handleClick={()=>
             console.log("He clicado en el botton Contacto")
