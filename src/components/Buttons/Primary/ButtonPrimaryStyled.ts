@@ -1,14 +1,27 @@
 import styled from "styled-components";
 import { Tokens } from "../../../common/Tokens";
 
-// * Styled primary button
-export const PrimaryButtonStyled = styled.button`
+// * Styled Primary button
+export const PrimaryButtonStyled = styled.button` 
   border: none;
-  background-color: ${Tokens.Colors.Buttons.Primary};
-  color: #fff;
-  border-radius: ${Tokens.Borders.Radius.PrimaryR};
-  padding: ${Tokens.Padding.PrimaryP};
+  background: ${Tokens.Colors.Buttons.Primary};
+  font-size: ${Tokens.Text.Size};
+  font-weight: ${Tokens.Text.Weight};
+  color: ${Tokens.Text.Color.Primary};
+  padding: ${Tokens.Padding.Medium};
   height: ${Tokens.Height.Large};
-  width: ${Tokens.Width.Large}
-
+  width: ${Tokens.Width.Large};
+  border-radius: ${Tokens.Borders.Radius.Medium};
+  &:hover{
+      background: ${Tokens.Colors.Buttons.PrimaryHover};
+      color: ${Tokens.Text.Color.Primary};
+      }
+  &:active{
+      background: ${Tokens.Colors.Buttons.PrimaryPressed};
+      color: ${Tokens.Text.Color.Primary};
+      box-shadow: ${Tokens.BoxShadow.Medium};
+    }
+  &:disabled{
+      color: ${Tokens.Text.Color.PrimaryDisabled};
+   }
 `;

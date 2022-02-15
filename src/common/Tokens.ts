@@ -1,13 +1,15 @@
 export const Tokens = {
   Colors: {
     Buttons: {
-      Primary: "#7F516A",
-      Secondary: "#000",
+      Primary:"#BF4085",
+      PrimaryPressed:"#CB659C",
+      PrimaryHover:"#A83875",
+      PrimaryDisabled:"#D192B4"
     },
   },
   Borders: {
     Radius: {
-      PrimaryR: "10px"
+      Medium: "10px"
     },
   },
   Constraints: {
@@ -15,16 +17,27 @@ export const Tokens = {
       XSmall: "",
       Small: "",
       MediumSmall: "",
+    }
+  },
+  Text: {
+    Weight: "bold",
+    Size: "20px",
+    Color: {
+      Primary: "#FFFFFF",
+      PrimaryDisabled: "#F7F7FC"
     },
   },
   Padding: {
-      PrimaryP: "16px 40px"
-    },
+    Medium: "16px 40px"
+  },
   Height:{
-      Large:"66px"
-    },
+    Large:"66px"
+  },
   Width:{
-      Large:"345px"
-    }
-
+    Large:"345px"
+  },
+   BoxShadow:{
+    Medium:"0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16)"
+  },
+ 
 };
