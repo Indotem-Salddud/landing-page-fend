@@ -17,7 +17,7 @@ const SampleView: React.FC = () => {
           <TertiaryButton
             title="Contact"
             handleClick={() => {
-              console.log("He clickado en el botón Contacto");
+
             }}
           />
         </div>

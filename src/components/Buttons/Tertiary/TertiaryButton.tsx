@@ -1,6 +1,7 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { TertiaryButtonStyled } from "./TertiaryButtonStyled";
+import { TertiaryButtonStyled} from "./TertiaryButtonStyled";
+
 
 // * Define proptypes
 const TertiaryButtonProptypes = {
@@ -17,13 +18,15 @@ type TertiaryButtonProps = PropTypes.InferProps<typeof TertiaryButtonProptypes>;
  * @param props {any}
  */
 const TertiaryButton: React.FC<TertiaryButtonProps> = (props: any) => (
-  <TertiaryButtonStyled
+  <TertiaryButtonStyled 
     type="button"
     role="button"
     onClick={() => props.handleClick()}
+ 
   >
     {props.title}
   </TertiaryButtonStyled>
+  
 );
 
 // * Define proptypes
