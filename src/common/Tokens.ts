@@ -45,5 +45,13 @@ export const Tokens = {
    BoxShadow:{
     Medium:"0px 4px 4px rgba(0, 0, 0, 0.08), inset 0px 4px 4px rgba(0, 0, 0, 0.16)"
   },
+  Footer: {
+    Color:"#B7C2B8",
+    Position: "absolute",
+    Width: "1440px",
+    Height: "240px",
+    Left: "0px",
+    Bottom: "-3507px",
+    },
  
 };

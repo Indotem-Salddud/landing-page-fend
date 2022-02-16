@@ -2,6 +2,7 @@ import React from "react";
 import "./SampleStyle.css";
 import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
 import SecondaryButton from "../components/Buttons/Secondary/Button.Secondary";
+import Footer from "../components/Footer/Footer";
 
 /**
  * ! Sample view project
@@ -29,7 +30,16 @@ const SampleView: React.FC = () => {
         }>
         </SecondaryButton>
         </div>
-    </div>
+      </div>
+      <div className="mt-3">
+          <div>
+            <Footer 
+                policy="Política de privacidad"
+                copyright="Copyright 2020">
+            </Footer>
+          </div>
+      </div>
+      
     </>
   );
 };
