@@ -10,9 +10,7 @@ export const Tokens = {
       QuinaryPressed:"#EBE0E6",
       QuinaryHover:"#CEB6C3",
       QuinaryDisabled:"#EFE7EB",
-      SenaryPressed:"#F7F3F5",
-      Septenary:"#9EB593",
-      SeptenaryHover:"#616161"
+      SenaryPressed:"#F7F3F5"
     },
   },
   Borders: {
@@ -56,20 +54,12 @@ export const Tokens = {
   Icons:{
     Width: {
       Septenary: "72px",
-      SeptenaryIcon: "40px",
       Octonary: "64px"
     },
     Height: {
       Septenary: "72px",
-      SeptenaryIcon: "40px",
       Octonary: "64px"
     },
-    BoxShadow:{
-      Septenary: "-2px 2px 7px rgba(0, 0, 0, 0.16)"
-    },
-    BorderRadius:{
-      Septenary: "54px"
-    }
   }
   
 };
