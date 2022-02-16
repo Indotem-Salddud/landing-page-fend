@@ -15,14 +15,14 @@ export const QuaternaryButtonStyled = styled.button`
   width: ${Tokens.Width.Large};
   border-radius: ${Tokens.Borders.Radius.Medium};
 &:hover{
-       background: ${Tokens.Colors.Buttons.QuaternaryHover};
-      color: ${Tokens.Text.Color.Quaternary};
+    background: ${Tokens.Colors.Buttons.QuaternaryHover};
+    color: ${Tokens.Text.Color.Quaternary};
       }
-  &:active{
-      background: ${Tokens.Colors.Buttons.QuaternaryPressed};
-      color: ${Tokens.Text.Color.Quaternary};
-      box-shadow: ${Tokens.BoxShadow.Medium};}
-   &:disabled{
-      color: ${Tokens.Text.Color.QuaternaryDisabled};
+&:active{
+    background: ${Tokens.Colors.Buttons.QuaternaryPressed};
+    color: ${Tokens.Text.Color.Quaternary};
+    box-shadow: ${Tokens.BoxShadow.Medium};}
+&:disabled{
+    color: ${Tokens.Text.Color.QuaternaryDisabled};
    }
 `;
