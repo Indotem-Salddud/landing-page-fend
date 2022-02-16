@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { PrimaryButtonStyled } from "./ButtonPrimaryStyled";
+import { EmployeeCarouselStyled } from "../Employee_carousel/EmployeeCarouselStyled";
 
 // * Define proptypes
 const PrimaryButtonProptypes = {
@@ -17,13 +17,13 @@ type PrimaryButtonProps = PropTypes.InferProps<typeof PrimaryButtonProptypes>;
  * @param props {any}
  */
 const PrimaryButton: React.FC<PrimaryButtonProps> = (props: any) => (
-  <PrimaryButtonStyled
+  <EmployeeCarouselStyled
     type="button"
     role="button"
     onClick={() => props.handleClick()}
   >
     {props.title}
-  </PrimaryButtonStyled>
+  </EmployeeCarouselStyled>
 );
 
 // * Define proptypes
