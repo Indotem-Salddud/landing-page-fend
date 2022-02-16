@@ -1,7 +1,14 @@
 import React from "react";
+import QuaternaryButton from "../components/Buttons/Quaternary/ButtonQuaternary";
+import QuinaryButton from "../components/Buttons/Quinary/ButtonQuinary";
+import SenaryButton from "../components/Buttons/Senary/ButtonSenary";
+import SeptenaryButton from "../components/Buttons/Septenary/ButtonSeptenary";
+import TertiaryButton from "../components/Buttons/Tertiary/ButtonTertiary";
 import "./SampleStyle.css";
-import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
 
+
+
+/** texto de prueba */
 /**
  * ! Sample view project
  * * whitehatdevv - 2022/02/09
@@ -12,10 +19,42 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Buttons component</h1>
         <div className="mt-3">
-          <PrimaryButton
+          <TertiaryButton
             title="Contact"
             handleClick={() => {
-              console.log("He clickado en el botón Contacto");
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <QuaternaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <QuinaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <SenaryButton
+            title="Contact"
+            handleClick={() => {
+
+            }}
+          />
+        </div>
+        <div className="mt-3">
+          <SeptenaryButton
+            title=""
+            handleClick={() => {
+
             }}
           />
         </div>
