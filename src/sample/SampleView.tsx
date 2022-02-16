@@ -1,6 +1,6 @@
 import React from "react";
 import "./SampleStyle.css";
-import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
+import EmployeeCard from "../components/Cards/Employee_card/EmployeeCard";
 
 /**
  * ! Sample view project
@@ -10,13 +10,12 @@ const SampleView: React.FC = () => {
   return (
     <>
       <div className="mt-3">
-        <h1>Buttons component</h1>
+        <h1>Cards component</h1>
         <div className="mt-3">
-          <PrimaryButton
-            title="Contact"
-            handleClick={() => {
-              console.log("He clickado en el botón Contacto");
-            }}
+          <EmployeeCard 
+          name="Jaime López"
+          position="CEO Indotem" 
+          text="Indotem nace como un proyecto para ayudar a las personas que más quieres, a tu familia"      
           />
         </div>
       </div>

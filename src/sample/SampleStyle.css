@@ -1,14 +1,14 @@
 body {
-    background-color: #000;
-    margin: 5%;
+  background-color: rgb(104, 32, 74);
+  margin: 5%;
 }
 
 .mt-3 {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 h1 {
-    font-size: 30pt;
-    color: #fff;
-    font-weight: bold;
+  font-size: 30pt;
+  color: #fff;
+  font-weight: bold;
 }
