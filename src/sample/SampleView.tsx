@@ -15,7 +15,7 @@ const SampleView: React.FC = () => {
           <EmployeeCard 
           name="Jaime López"
           position="CEO Indotem" 
-          text="Indotem nace como un proyecto para ayudar a las personas que más quieres, a tu familia"      
+          text='"Indotem nace como un proyecto para ayudar a las personas que más quieres, a tu familia"'      
           />
         </div>
       </div>
