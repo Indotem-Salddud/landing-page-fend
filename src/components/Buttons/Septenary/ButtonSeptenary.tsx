@@ -30,10 +30,9 @@ const SeptenaryButton: React.FC<SeptenaryButtonProps> = (props: any) => (
     type="button"
     role="button"
     onClick={() => props.handleClick()}
- 
   >
     
-  <SeptenaryIconStyled src={icono}/>
+  <SeptenaryIconStyled background={icono}/>
     {props.title}
   </SeptenaryButtonStyled>
   
