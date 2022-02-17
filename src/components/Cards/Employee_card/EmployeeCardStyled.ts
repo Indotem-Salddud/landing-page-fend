@@ -2,21 +2,30 @@ import styled from "styled-components";
 
 
 // * Styled employee card
+
 export const EmployeeCardContainerStyled = styled.div`
 
-position: static;
-width: 265px;
-left: 26px;
-top: 61px;
-bottom: 61px;
- z-index: -1;
+display:flex;
+position: relative;
+width: 14.56rem;
+height: 22rem;
+top: 8.5vh;
+justify-content: space-between;
+float: left;
+margin-right: 6%;
+
+
+
+  
+
 
 
 /* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 67px;
+
+
+
+
+
 
 `;
 
@@ -29,8 +38,8 @@ align-items: center;
 padding: 120px 25px 25px;
 
 position: absolute;
-width: 265px;
-height: 290px;
+width: 14.56rem;
+height: 10.125rem;
 left: calc(50% - 265px/2);
 top: calc(50% - 290px/2 + 30.5px);
 
@@ -45,8 +54,8 @@ ${EmployeeCardContainerStyled}:hover & {
     padding: 145px 25px 25px;
 
     position: absolute;
-    width: 285px;
-    height: 356px;
+    width: 15.8rem;
+    height: 20.25rem;
     left: calc(50% - 285px/2);
     top: calc(50% - 356px/2 + 34.5px);
 
@@ -61,20 +70,22 @@ ${EmployeeCardContainerStyled}:hover & {
 export const EmployeeCardImageStyled = styled.div<{photo:string}>`
 
 position: absolute;
-width: 180px;
-height: 180px;
+width: 9.25rem;
+height: 9.25rem;
 left: calc(50% - 130px/2 + 0.32px);
 top: calc(50% - 160px/2 - 95.5px);
+border-radius:50%;
 z-index:3;
 
 background: url(${({photo}) =>photo});
+background-size: cover;
 
 ${EmployeeCardContainerStyled}:hover & {
     display: flex;
     position: absolute;
-    width: 179.6px;
-    height: 180px;
-    left: calc(50% - 125.6px/2 + 0.3px);
+    width: 11.25rem;
+    height: 11.25rem;
+    left: calc(50% - 10.25rem/2);
     top: calc(50% - 180px/2 - 122.5px);}
 
 `;
@@ -272,3 +283,62 @@ ${EmployeeCardContainerStyled}:hover & {
     margin: 16px 0px;}
 
 `;
+export const EmployeeCardText2Styled = styled.p`
+
+display:inline;
+position: static;
+width: 217px;
+height: 72px;
+left: 24px;
+top: 185.5px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+/* or 129% */
+text-align: center;
+
+/* Grises/negro carbon */
+color: #7F516A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 16px 0px;
+${EmployeeCardContainerStyled}:hover & {
+    position: static;
+    width: 217px;
+    height: 80px;
+    left: 34px;
+    top: 230.5px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* or 125% */
+    text-align: center;
+
+    /* Grises/negro carbon */
+    color: #7F516A;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;}
+
+`;
+
+
+
+
+
