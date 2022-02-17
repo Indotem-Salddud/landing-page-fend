@@ -32,13 +32,12 @@ export const FooterSecondContainerStyled = styled.div`
     padding: 0px;
     position: static;
     width: 140px;
-    height: 36px;
+    height: 71px;
     left: 32px;
     top: 0px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 16px 0px;
 
 `;
 
@@ -59,7 +58,20 @@ export const FooterThirdContainerStyled = styled.div`
 
 `;
 
+export const FooterTwitterDivStyled = styled.div`
 
+    position: static;
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+
+
+`
 
 export const FooterLogoTwitterStyled = styled.img` 
     position: static;
@@ -67,7 +79,7 @@ export const FooterLogoTwitterStyled = styled.img`
     right: 2%;
     top: 2%;
     bottom: 2%;
-    width: 34,56px
+    width: 20%
     height: 34,56px
     top: 0,72px
     left: 0,72px
@@ -80,6 +92,7 @@ export const FooterLogoInstagramStyled = styled.img`
     right: 0%;
     top: 0%;
     bottom: 0%;
+    padding-left:18px
 
 `;
 
@@ -89,6 +102,8 @@ export const FooterLogoFacebookStyled = styled.img`
     right: 2%;
     top: 2%;
     bottom: 2%;
+    padding-left:16px
+
 
 `;
 

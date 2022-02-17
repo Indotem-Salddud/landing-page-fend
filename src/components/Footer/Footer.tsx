@@ -27,13 +27,15 @@ const FooterProptypes = {
       <FooterFirstContainerStyled>
         <FooterLogoStyled src={logo}/>
       <FooterSecondContainerStyled>
-            <FooterLogoTwitterStyled src={twitter}/>
-            <FooterLogoInstagramStyled src={instagram}/>
-            <FooterLogoFacebookStyled src={facebook}/>
-            <FooterTextStyled>{props.policy}</FooterTextStyled>
-            <FooterText2Styled>{props.copyright}</FooterText2Styled>
+       
+          <a href= "https://twitter.com/indotem"><FooterLogoTwitterStyled src={twitter}/></a> 
+          <a href="https://www.instagram.com/salud.indotem/?hl=es"><FooterLogoInstagramStyled src={instagram}/></a> 
+          <a href="https://www.facebook.com/indotem.es/"><FooterLogoFacebookStyled src={facebook}/></a> 
+          <FooterTextStyled>{props.policy}</FooterTextStyled>
+            
       </FooterSecondContainerStyled>
       </FooterFirstContainerStyled>
+      <FooterText2Styled>{props.copyright}</FooterText2Styled>
     </FooterStyled>
   );
   
