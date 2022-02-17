@@ -1,10 +1,13 @@
 body {
-    background-color: #000;
+    background-color: white;
     margin: 5%;
+    width: 100%
 }
 
 .mt-3 {
+    
     margin-top: 3%;
+    position: relative
 }
 
 h1 {

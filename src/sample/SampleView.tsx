@@ -1,6 +1,6 @@
 import React from "react";
 import "./SampleStyle.css";
-import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
+import CarouselCont from "../components/Cards/Employee_carousel/ContainerCarousel";
 
 /**
  * ! Sample view project
@@ -9,15 +9,10 @@ import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
 const SampleView: React.FC = () => {
   return (
     <>
-      <div className="mt-3">
+      <div>
         <h1>Buttons component</h1>
         <div className="mt-3">
-          <PrimaryButton
-            title="Contact"
-            handleClick={() => {
-              console.log("He clickado en el botón Contacto");
-            }}
-          />
+          <CarouselCont />
         </div>
       </div>
     </>
