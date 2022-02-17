@@ -9,10 +9,11 @@ import CarouselCont from "../components/Cards/Employee_carousel/ContainerCarouse
 const SampleView: React.FC = () => {
   return (
     <>
-      <div>
-        <h1>Buttons component</h1>
+      
+      <div className="mt-3">
+        <h1>Cards component</h1>
         <div className="mt-3">
-          <CarouselCont />
+        <CarouselCont />
         </div>
       </div>
     </>

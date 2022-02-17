@@ -1,7 +1,8 @@
 import React from "react";
 import * as PropTypes from "prop-types";
 import { EmployeeCarouselStyled, ContainerStyled } from "../Employee_carousel/EmployeeCarouselStyled";
-import Carousel from "../Employee_carousel/EmployeeCarousel";
+import EmployeeCard from "../Employee_card/EmployeeCard";
+import { data } from "../Employee_card/EmployeeCardsData";
 
 
 
@@ -18,15 +19,9 @@ import Carousel from "../Employee_carousel/EmployeeCarousel";
   return (
     <ContainerStyled>
       <button> &#60; </button>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-      <Carousel title= "Vamos allá"/>
-     
+      {data.map((person:any) => {
+          return <div className="mt-2"><EmployeeCard {...person} /></div>;
+          })} 
       <button> &#62; </button>
     </ContainerStyled>
   )
