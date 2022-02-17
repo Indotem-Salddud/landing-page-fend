@@ -1,14 +1,17 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { FooterStyled, FooterLogoStyled } from "./FooterStyled";
+import { FooterStyled, FooterLogoStyled, FooterFirstContainerStyled, FooterTextStyled, FooterSecondContainerStyled, FooterText2Styled, FooterLogoTwitterStyled, FooterLogoInstagramStyled, FooterLogoFacebookStyled, FooterThirdContainerStyled } from "./FooterStyled";
 import logo from "./../../resources/static/Indotem.Logo.png";
+import twitter from "./../../resources/static/twitter.png";
+import instagram from "./../../resources/static/instagram.png";
+import facebook from "./../../resources/static/facebook.png";
+
 
 
 // * Define proptypes
 const FooterProptypes = {
     policy: PropTypes.string.isRequired,
     copyright: PropTypes.string.isRequired,
-    handleClick: PropTypes.func,
   };
   
   // * Define typealias for proptypes
@@ -21,14 +24,16 @@ const FooterProptypes = {
  */
  const Footer: React.FC<FooterProps> = (props: any) => (
     <FooterStyled>
-		<div>
-			<div>
-                <FooterLogoStyled src={logo}/> 
-                {props.policy}
-            </div>
-		</div>
-        <div> {props.copyright}</div>
-
+      <FooterFirstContainerStyled>
+        <FooterLogoStyled src={logo}/>
+      <FooterSecondContainerStyled>
+            <FooterLogoTwitterStyled src={twitter}/>
+            <FooterLogoInstagramStyled src={instagram}/>
+            <FooterLogoFacebookStyled src={facebook}/>
+            <FooterTextStyled>{props.policy}</FooterTextStyled>
+            <FooterText2Styled>{props.copyright}</FooterText2Styled>
+      </FooterSecondContainerStyled>
+      </FooterFirstContainerStyled>
     </FooterStyled>
   );
   

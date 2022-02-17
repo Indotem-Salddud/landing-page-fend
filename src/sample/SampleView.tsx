@@ -32,12 +32,10 @@ const SampleView: React.FC = () => {
         </div>
       </div>
       <div className="mt-3">
-          <div>
             <Footer 
                 policy="Política de privacidad"
                 copyright="Copyright 2020">
             </Footer>
-          </div>
       </div>
       
     </>
