@@ -1,6 +1,10 @@
 import React from "react";
-import "./SampleStyle.css";
 import EmployeeCard from "../components/Cards/Employee_card/EmployeeCard";
+import { data } from "../components/Cards/Employee_card/EmployeeCardsData";
+import "./SampleStyle.css";
+
+
+
 
 /**
  * ! Sample view project
@@ -12,11 +16,11 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Cards component</h1>
         <div className="mt-3">
-          <EmployeeCard 
-          name="Jaime López"
-          position="CEO Indotem" 
-          text='"Indotem nace como un proyecto para ayudar a las personas que más quieres, a tu familia"'      
-          />
+          
+          {data.map((person:any) => {
+          return <div className="mt-2"><EmployeeCard {...person} /></div>;
+          })} 
+         
         </div>
       </div>
     </>
