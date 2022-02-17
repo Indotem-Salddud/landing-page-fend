@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { FooterStyled, FooterLogoStyled, FooterFirstContainerStyled, FooterTextStyled, FooterSecondContainerStyled, FooterText2Styled, FooterLogoTwitterStyled, FooterLogoInstagramStyled, FooterLogoFacebookStyled, FooterThirdContainerStyled } from "./FooterStyled";
+import { FooterStyled, FooterLogoStyled, FooterFirstContainerStyled, FooterTextStyled, FooterSecondContainerStyled, FooterText2Styled, FooterLogoTwitterStyled, FooterLogoInstagramStyled, FooterLogoFacebookStyled } from "./FooterStyled";
 import logo from "./../../resources/static/Indotem.Logo.png";
 import twitter from "./../../resources/static/twitter.png";
 import instagram from "./../../resources/static/instagram.png";
