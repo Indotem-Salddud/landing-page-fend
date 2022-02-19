@@ -41,37 +41,25 @@ export const FooterSecondContainerStyled = styled.div`
 
 `;
 
-export const FooterLogoTwitterStyled = styled.img` 
-    position: static;
-    left: 2%;
-    right: 2%;
-    top: 2%;
-    bottom: 2%;
-    width: 20%
-    height: 34,56px
-    top: 0,72px
-    left: 0,72px
 
-`;
-
-export const FooterLogoInstagramStyled = styled.img` 
+export const FooterDivInstagramStyled = styled.div` 
     position: static;
-    left: 0%;
+    left: %;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    padding-left:18px
+    margin-left:18px
 
 `;
 
-export const FooterLogoFacebookStyled = styled.img` 
+export const FooterDivFacebookStyled = styled.div` 
+    width:34px;
     position: static;
     left: 2%;
     right: 2%;
     top: 2%;
     bottom: 2%;
-    padding-left:16px
-
+    margin-left:16px;
 
 `;
 

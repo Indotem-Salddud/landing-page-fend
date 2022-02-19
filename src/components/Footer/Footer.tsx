@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { FooterStyled, FooterLogoStyled, FooterFirstContainerStyled, FooterTextStyled, FooterSecondContainerStyled, FooterText2Styled, FooterLogoTwitterStyled, FooterLogoInstagramStyled, FooterLogoFacebookStyled } from "./FooterStyled";
+import { FooterDivInstagramStyled, FooterDivFacebookStyled, FooterStyled, FooterLogoStyled, FooterFirstContainerStyled, FooterTextStyled, FooterSecondContainerStyled, FooterText2Styled } from "./FooterStyled";
 import logo from "./../../resources/static/Indotem.Logo.png";
 import twitter from "./../../resources/static/twitter.png";
 import instagram from "./../../resources/static/instagram.png";
@@ -28,9 +28,13 @@ const FooterProptypes = {
         <FooterLogoStyled src={logo}/>
       <FooterSecondContainerStyled>
        
-          <a href= "https://twitter.com/indotem"><FooterLogoTwitterStyled src={twitter}/></a> 
-          <a href="https://www.instagram.com/salud.indotem/?hl=es"><FooterLogoInstagramStyled src={instagram}/></a> 
-          <a href="https://www.facebook.com/indotem.es/"><FooterLogoFacebookStyled src={facebook}/></a> 
+          <a href= "https://twitter.com/indotem"><img src={twitter}/></a> 
+          <FooterDivInstagramStyled>
+          <a href="https://www.instagram.com/salud.indotem/?hl=es"><img src={instagram}/></a> 
+          </FooterDivInstagramStyled>
+          <FooterDivFacebookStyled>
+            <a href="https://www.facebook.com/indotem.es/"><img src={facebook}/></a> 
+          </FooterDivFacebookStyled>
           <FooterTextStyled>{props.policy}</FooterTextStyled>
             
       </FooterSecondContainerStyled>
