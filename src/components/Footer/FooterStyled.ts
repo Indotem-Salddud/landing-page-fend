@@ -19,9 +19,9 @@ export const FooterFirstContainerStyled = styled.div`
     padding: 0px;
     position: absolute;
     width: 204px;
-    height: 157px;
+    height: 204px;
     left: 618px;
-    top: 41px;
+    top: 20px;
 
 `;
 
@@ -32,7 +32,7 @@ export const FooterSecondContainerStyled = styled.div`
     padding: 0px;
     position: static;
     width: 140px;
-    height: 71px;
+    height: 75px;
     left: 32px;
     top: 0px;
     flex: none;
@@ -40,38 +40,6 @@ export const FooterSecondContainerStyled = styled.div`
     flex-grow: 0;
 
 `;
-
-export const FooterThirdContainerStyled = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
-    width: 140px;
-    height: 36px;
-    left: 32px;
-    top: 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 16px 0px;
-
-`;
-
-export const FooterTwitterDivStyled = styled.div`
-
-    position: static;
-    width: 36px;
-    height: 36px;
-    left: 0px;
-    top: 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 16px;
-
-
-`
 
 export const FooterLogoTwitterStyled = styled.img` 
     position: static;
@@ -123,12 +91,10 @@ export const FooterLogoStyled = styled.img`
 export const FooterTextStyled = styled.p`
     height: 19px;
     width: 204px;
-    left: 0px;
-    top: 0px;
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 0%;
+    top: 70%;
     bottom: 0%;
     font-family: Rubik;
     font-style: normal;
@@ -146,7 +112,7 @@ export const FooterText2Styled = styled.p`
     height: 15px
     left: 1290px;
     top: 181px;
-    bottom: 0%;
+    left: 90%;
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -154,5 +120,6 @@ export const FooterText2Styled = styled.p`
     line-height: 15px;
     letter-spacing: -0.02em;
     color: #616161;
+    
 `;
 
