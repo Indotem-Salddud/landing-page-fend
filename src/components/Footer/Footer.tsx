@@ -28,12 +28,12 @@ const FooterProptypes = {
         <FooterLogoStyled src={logo}/>
       <FooterSecondContainerStyled>
        
-          <a href= "https://twitter.com/indotem"><img src={twitter}/></a> 
+          <a href= "https://twitter.com/indotem"><img src={twitter} alt=""/></a> 
           <FooterDivInstagramStyled>
-          <a href="https://www.instagram.com/salud.indotem/?hl=es"><img src={instagram}/></a> 
+          <a href="https://www.instagram.com/salud.indotem/?hl=es"><img src={instagram} alt=""/></a> 
           </FooterDivInstagramStyled>
           <FooterDivFacebookStyled>
-            <a href="https://www.facebook.com/indotem.es/"><img src={facebook}/></a> 
+            <a href="https://www.facebook.com/indotem.es/"><img src={facebook} alt=""/></a> 
           </FooterDivFacebookStyled>
           <FooterTextStyled>{props.policy}</FooterTextStyled>
             
