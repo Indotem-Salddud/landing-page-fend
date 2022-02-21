@@ -1,7 +1,7 @@
 import React from "react";
 import * as PropTypes from "prop-types";
 import { EmployeeCardContainerStyled,EmployeeCardBackgroundStyled,EmployeeCardImageStyled,EmployeeCardTextPositionStyled,EmployeeCardTextTitleStyled,EmployeeCardTextStyled,EmployeeCardTitleContainerStyled, EmployeeCardText2Styled } from "../Employee_card/EmployeeCardStyled";
-
+import "./EmpCard.css";
 
 
 // * Define proptypes
@@ -25,7 +25,7 @@ type EmployeeCardProps = PropTypes.InferProps<typeof EmployeeCardProptypes>;
  * @param props {any}
  */
 const EmployeeCard: React.FC<EmployeeCardProps> = (props: any) => (
-<EmployeeCardContainerStyled>
+<EmployeeCardContainerStyled >
   <EmployeeCardImageStyled photo={props.photo}/>
   <EmployeeCardBackgroundStyled>
     <EmployeeCardTitleContainerStyled>

@@ -1,11 +1,20 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { EmployeeCarouselStyled, ContainerStyled } from "../Employee_carousel/EmployeeCarouselStyled";
+import { ContainerStyled } from "../Employee_carousel/EmployeeCarouselStyled";
 import EmployeeCard from "../Employee_card/EmployeeCard";
 import { data } from "../Employee_card/EmployeeCardsData";
+import Smaller_icon from "../../../resources/static/smaller_icon.png"
+import Greater_icon from "../../../resources/static/greater_icon.png"
 
 
 
+// * Define proptypes
+const CardsCarouselProptypes = {
+};
+
+
+// * Define typealias for proptypes
+type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
 
 /**
  * ! Carousel Component
@@ -15,17 +24,31 @@ import { data } from "../Employee_card/EmployeeCardsData";
 
 
 
- const CarouselCont: React.FC = () => {
+
+const CarouselCont: React.FC<CardsCarouselProps> = () => {
+
+  console.log(data.length)
+  function slideLeft(){
+    console.log("yess")
+  }
   return (
     <ContainerStyled>
-      <button> &#60; </button>
-      {data.map((person:any) => {
-          return <div className="mt-2"><EmployeeCard {...person} /></div>;
+        
+      <img src={Smaller_icon} onClick={slideLeft} alt="#"/>
+      <div id="hola">
+      {data.map((person:any, index) => {
+          
+            return <div className="mt-2"><EmployeeCard key={index} {...person} /></div>;
+          
           })} 
-      <button> &#62; </button>
+      
+      
+      </div>
+      <img src={Greater_icon} alt="#"/>
+      
     </ContainerStyled>
   )
- };
+};
 
 
 

@@ -10,9 +10,10 @@ position: relative;
 width: 14.56rem;
 height: 22rem;
 top: 8.5vh;
-justify-content: space-between;
+/* justify-content: space-between;  */
 float: left;
-margin-right: 6%;
+/* margin-right: 6%; */
+margin: 1%
 
 
 
