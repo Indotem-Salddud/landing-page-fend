@@ -6,6 +6,9 @@ import CarouselCont from "../components/Cards/Employee_carousel/ContainerCarouse
  * ! Sample view project
  * * whitehatdevv - 2022/02/09
  */
+
+
+
 const SampleView: React.FC = () => {
   return (
     <>
@@ -13,7 +16,12 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Cards component</h1>
         <div className="mt-3">
-        <CarouselCont />
+        <CarouselCont  handleClick={() => {
+            console.log("boton pulsado")
+            }}  handleClick2={() => { 
+                console.log("boton 2 pulsado")
+            }}  />
+           
         </div>
       </div>
     </>
