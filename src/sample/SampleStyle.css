@@ -20,6 +20,18 @@ h1 {
   top: -65px;
   margin: 4%;
 }
+#test1{
+  width: 90%;
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons{
+  width: 40px;
+  height: 40px;
+}
 
 /* .prevCard {
   left: 0;

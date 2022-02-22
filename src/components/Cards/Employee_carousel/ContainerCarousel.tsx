@@ -28,24 +28,23 @@ type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
 const CarouselCont: React.FC<CardsCarouselProps> = () => {
 
   console.log(data.length)
-  function slideLeft(){
-    console.log("yess")
-  }
+  
   return (
     <ContainerStyled>
         
-      <img src={Smaller_icon} onClick={slideLeft} alt="#"/>
-      <div id="hola">
+{/*   <img src={Smaller_icon}  alt="#"/>
+ */}<div id="hola">
       {data.map((person:any, index) => {
           
             return <div className="mt-2"><EmployeeCard key={index} {...person} /></div>;
           
           })} 
+    </div>     
       
       
-      </div>
-      <img src={Greater_icon} alt="#"/>
-      
+     
+{/*        <img src={Greater_icon} alt="#"/>
+ */}  
     </ContainerStyled>
   )
 };
