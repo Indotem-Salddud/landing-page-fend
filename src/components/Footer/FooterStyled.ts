@@ -29,6 +29,7 @@ export const FooterText2Styled = styled.p`
     line-height: ${Tokens.FooterText2.LineHeight};
     letter-spacing: ${Tokens.FooterText2.LetterSpacing};
     color:${Tokens.FooterText2.Color};
+    margin-left:${Tokens.FooterText2.Margin}
     
 `;
 

@@ -49,7 +49,7 @@ const FooterProptypes = {
         <div className="col-3"></div>
         <div className="row">
           <div className="d-flex justify-content-center mt-3 ">
-            <FooterTextStyled>{props.policy}</FooterTextStyled>
+            <FooterTextStyled>{props.policy}</FooterTextStyled> <FooterText2Styled>{props.copyright}</FooterText2Styled>
           </div>
         </div>
       </div>
@@ -57,9 +57,6 @@ const FooterProptypes = {
 
     <div className="col"></div>
 
-  </div>
-  <div className="col-12 d-flex justify-content-end mt-3">
-    <FooterText2Styled>{props.copyright}</FooterText2Styled>
   </div>
 </FooterStyled>
   );
