@@ -11,26 +11,26 @@ export const FooterStyled = styled.footer`
 
 
 export const FooterTextStyled = styled.p`
-    position: absolute;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.1875rem;
-    color: #616161;
+    position: ${Tokens.Footer.FooterText.Position}
+    font-family: ${Tokens.Footer.FooterText.FontFamily}
+    font-style: ${Tokens.Footer.FooterText.FontStyle}
+    font-weight: ${Tokens.Footer.FooterText.FontWeight}
+    font-size: ${Tokens.Footer.FooterText.FontSize}
+    line-height: ${Tokens.Footer.FooterText.LineHeight}
+    color: ${Tokens.Footer.FooterText.Color}
 
 
 `;
 
 export const FooterText2Styled = styled.p`
-    position: absolute;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 0.8125rem;
-    line-height: 0.9375rem;
-    letter-spacing: -0.02em;
-    color: #616161;
+    position: ${Tokens.Footer.FooterText2.Position}
+    font-family: ${Tokens.Footer.FooterText2.FontFamily}
+    font-style: ${Tokens.Footer.FooterText2.FontStyle}
+    font-weight: ${Tokens.Footer.FooterText2.FontWeight}
+    font-size: ${Tokens.Footer.FooterText2.FontSize}
+    line-height: ${Tokens.Footer.FooterText2.LineHeight}
+    letter-spacing: ${Tokens.Footer.FooterText2.LetterSpacing}
+    color:${Tokens.Footer.FooterText2.Color}
     
 `;
 

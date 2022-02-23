@@ -4,6 +4,7 @@ import { Tokens } from "../../../common/Tokens";
 // * Styled Secondary button
 export const SecondaryButtonStyled = styled.button` 
   border: none;
+  margin: ${Tokens.Margin.Small};
   background: ${Tokens.Colors.Buttons.Secondary};
   font-size: ${Tokens.Text.Size};
   font-weight: ${Tokens.Text.Weight};
