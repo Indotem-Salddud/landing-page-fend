@@ -65,7 +65,7 @@ export const Tokens = {
     FontWeight:"300",
     FontSize:"0.8125rem",
     LineHeight:"0.93rem",
-    LetterSpacing:"-0.02em",
+    LetterSpacing:"-0.02rem",
     Color:"#616161",
     Margin:"90%"
     },

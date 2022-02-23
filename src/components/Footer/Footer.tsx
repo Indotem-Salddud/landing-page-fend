@@ -58,8 +58,6 @@ const FooterProptypes = {
     <div className="col"></div>
 
   </div>
-  <div className="col-12 d-flex justify-content-end mt-3">
-  </div>
 </FooterStyled>
   );
   
