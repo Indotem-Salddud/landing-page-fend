@@ -5,32 +5,30 @@ import { Tokens } from "../../common/Tokens";
 export const FooterStyled = styled.footer` 
     background: ${Tokens.Footer.Color};
     height: ${Tokens.Footer.Height};
-    
-
 `;
 
 
-export const FooterTextStyled = styled.p`
-    position: ${Tokens.Footer.FooterText.Position}
-    font-family: ${Tokens.Footer.FooterText.FontFamily}
-    font-style: ${Tokens.Footer.FooterText.FontStyle}
-    font-weight: ${Tokens.Footer.FooterText.FontWeight}
-    font-size: ${Tokens.Footer.FooterText.FontSize}
-    line-height: ${Tokens.Footer.FooterText.LineHeight}
-    color: ${Tokens.Footer.FooterText.Color}
+export const FooterTextStyled = styled.p`;
+    position: ${Tokens.FooterText.Position};
+    font-family: ${Tokens.FooterText.FontFamily};
+    font-style: ${Tokens.FooterText.FontStyle};
+    font-weight: ${Tokens.FooterText.FontWeight};
+    font-size: ${Tokens.FooterText.FontSize};
+    line-height: ${Tokens.FooterText.LineHeight};
+    color: ${Tokens.FooterText.Color};
 
 
 `;
 
 export const FooterText2Styled = styled.p`
-    position: ${Tokens.Footer.FooterText2.Position}
-    font-family: ${Tokens.Footer.FooterText2.FontFamily}
-    font-style: ${Tokens.Footer.FooterText2.FontStyle}
-    font-weight: ${Tokens.Footer.FooterText2.FontWeight}
-    font-size: ${Tokens.Footer.FooterText2.FontSize}
-    line-height: ${Tokens.Footer.FooterText2.LineHeight}
-    letter-spacing: ${Tokens.Footer.FooterText2.LetterSpacing}
-    color:${Tokens.Footer.FooterText2.Color}
+    position: ${Tokens.FooterText2.Position};
+    font-family: ${Tokens.FooterText2.FontFamily};
+    font-style: ${Tokens.FooterText2.FontStyle};
+    font-weight: ${Tokens.FooterText2.FontWeight};
+    font-size: ${Tokens.FooterText2.FontSize};
+    line-height: ${Tokens.FooterText2.LineHeight};
+    letter-spacing: ${Tokens.FooterText2.LetterSpacing};
+    color:${Tokens.FooterText2.Color};
     
 `;
 

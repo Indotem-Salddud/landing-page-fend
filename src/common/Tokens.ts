@@ -30,7 +30,7 @@ export const Tokens = {
       Primary: "#FFFFFF",
       PrimaryDisabled: "#F7F7FC",
       Secondary: "#732650;",
-      SecondaryDisabled: "#C5ABB9"
+      SecondaryDisabled: "#C5ABB9",
     },
   },
   Padding: {
@@ -47,27 +47,26 @@ export const Tokens = {
   },
   Footer: {
     Color:"#B7C2B8",
-    Height: "15rem",
-    FooterText:{
-      Position:"absolute",
-      FontFamily:"Rubik",
-      FontStyle:"normal",
-      FontWeight:"bold",
-      FontSize:"1rem",
-      LineHeight:"1.1875rem",
-      Color:"#616161"
+    Height:"15rem"
     },
-    FooterText2:{
-      Position:"absolute",
-      FontFamily:"Rubik",
-      FontStyle:"normal",
-      FontWeight:"300",
-      FontSize:"0.8125rem",
-      LineHeight:"0.9375rem",
-      LetterSpacing:"-0.02rem",
-      Color:"#616161"
-    }
-
+  FooterText:{
+    Position:"absolute",
+    FontFamily:"Rubik",
+    FontStyle:"normal",
+    FontWeight:"bold",
+    FontSize:"1rem",
+    LineHeight:"1.1875rem",
+    Color:"#616161"
+    },
+  FooterText2:{
+    Position:"absolute",
+    FontFamily:"Rubik",
+    FontStyle:"normal",
+    FontWeight:"300",
+    FontSize:"0.8125rem",
+    LineHeight:"0.9375rem",
+    LetterSpacing:"-0.02rem",
+    Color:"#616161"
     },
   Margin: {
     Small:"5%"
