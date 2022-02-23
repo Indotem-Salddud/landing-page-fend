@@ -59,7 +59,7 @@ const FooterProptypes = {
 
   </div>
   <div className="col-12 d-flex justify-content-end p-2 mt-3">
-    <FooterText2Styled>{props.copyright}</FooterText2Styled>
+    <FooterText2Styled><p>{props.copyright}</p></FooterText2Styled>
   </div>
 </FooterStyled>
   );
