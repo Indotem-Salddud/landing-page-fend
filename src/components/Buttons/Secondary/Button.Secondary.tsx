@@ -1,33 +1,33 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { PrimaryButtonStyled } from "./ButtonPrimaryStyled";
+import { SecondaryButtonStyled } from "./ButtonSecondaryStyled";
 
 // * Define proptypes
-const PrimaryButtonProptypes = {
+const SecondaryButtonProptypes = {
   title: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
 // * Define typealias for proptypes
-type PrimaryButtonProps = PropTypes.InferProps<typeof PrimaryButtonProptypes>;
+type SecondaryButtonProps = PropTypes.InferProps<typeof SecondaryButtonProptypes>;
 
 /**
- * ! Primary button Component
+ * ! Secondary button Component
  * * ricardodsb, stefaranzazu - 2022/02/11
  * @param props {any}
  */
-const PrimaryButton: React.FC<PrimaryButtonProps> = (props: any) => (
-  <PrimaryButtonStyled
+const SecondaryButton: React.FC<SecondaryButtonProps> = (props: any) => (
+  <SecondaryButtonStyled
     type="button"
     role="button"
     onClick={() => props.handleClick()}
   >
     {props.title}
-  </PrimaryButtonStyled>
+  </SecondaryButtonStyled>
 );
 
 // * Define proptypes
-PrimaryButton.propTypes = PrimaryButtonProptypes;
+SecondaryButton.propTypes = SecondaryButtonProptypes;
 
 // * Export component
-export default PrimaryButton;
+export default SecondaryButton;
