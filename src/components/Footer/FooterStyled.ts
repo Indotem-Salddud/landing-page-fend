@@ -4,7 +4,7 @@ import { Tokens } from "../../common/Tokens";
 // * Styled Footer
 export const FooterStyled = styled.footer` 
     background: ${Tokens.Footer.Color};
-    height: ${Tokens.Footer.Height}
+    height: ${Tokens.Footer.Height};
 `;
 
 
