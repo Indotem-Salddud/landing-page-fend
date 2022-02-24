@@ -1,20 +1,13 @@
-import React from "react";
+import React  from "react";
 import * as PropTypes from "prop-types";
-import { ContainerStyled } from "../Employee_carousel/EmployeeCarouselStyled";
+import { ContainerStyled, CaruselLeftButton, CaruselRightButton, CardContainer} from "../Employee_carousel/EmployeeCarouselStyled";
 import EmployeeCard from "../Employee_card/EmployeeCard";
 import { data } from "../Employee_card/EmployeeCardsData";
-import Smaller_icon from "../../../resources/static/smaller_icon.png"
-import Greater_icon from "../../../resources/static/greater_icon.png"
+import rArrow from "../../../resources/icons/ep_arrow-right-bold.png"
+import lArrow from "../../../resources/icons/ep_arrow-left-bold.png"
+import { useState, useEffect } from "react";
 
 
-
-// * Define proptypes
-const CardsCarouselProptypes = {
-};
-
-
-// * Define typealias for proptypes
-type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
 
 /**
  * ! Carousel Component
@@ -22,34 +15,37 @@ type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
  * @param props {any}
  */
 
+const test = data.map((person:any, index:number) => (     
+  <div className="mt-2"  key={index}  ><EmployeeCard {...person} /></div>
+))
 
 
 
-const CarouselCont: React.FC<CardsCarouselProps> = () => {
-
-  console.log(data.length)
+export default function CarouselCont(){
+ 
+ const [pos, setPos] = useState(0);
   
+  
+  useEffect(() => {
+    console.log("ok")
+  }, [pos])
+  let caca = [test[pos],test[pos + 1],test[pos + 2], test[pos + 3]];
   return (
-    <ContainerStyled>
+    <ContainerStyled >
+      <CardContainer id="container">
+        {caca}
         
-{/*   <img src={Smaller_icon}  alt="#"/>
- */}<div id="hola">
-      {data.map((person:any, index) => {
-          
-            return <div className="mt-2"><EmployeeCard key={index} {...person} /></div>;
-          
-          })} 
-    </div>     
+      </CardContainer>
       
-      
-     
-{/*        <img src={Greater_icon} alt="#"/>
- */}  
-    </ContainerStyled>
+      <CaruselLeftButton background={lArrow}   />
+      <CaruselRightButton background={rArrow}
+      onClick={() => setPos(prevPos => prevPos + 1)}   />
+     </ContainerStyled>
+
   )
-};
+}; 
 
 
 
-// * Export component
-export default CarouselCont;
+
+

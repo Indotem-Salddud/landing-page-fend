@@ -1,13 +1,12 @@
 body {
-    background-color: white;
-    margin: 5%;
-    width: 100%
+  background-color: white;
+  margin: 5%;
+  width: 100%;
 }
 
 .mt-3 {
-    
-    margin-top: 1%;
-    position: relative
+  margin-top: 3%;
+  position: relative;
 }
 
 h1 {
@@ -16,9 +15,8 @@ h1 {
   font-weight: bold;
 }
 .mt-2 {
-  /* position: absolute; */
-  top: -65px;
-  margin: 4%;
+  margin: 2%;
+ 
 }
 #test1{
   width: 90%;

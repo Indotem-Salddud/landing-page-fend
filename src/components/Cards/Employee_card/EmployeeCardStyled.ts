@@ -16,18 +16,6 @@ float: left;
 margin: 1%
 
 
-
-  
-
-
-
-/* Inside auto layout */
-
-
-
-
-
-
 `;
 
 export const EmployeeCardBackgroundStyled = styled.div`
@@ -39,8 +27,8 @@ align-items: center;
 padding: 120px 25px 25px;
 
 position: absolute;
-width: 14.56rem;
-height: 10.125rem;
+width: 75%;
+height: 40%;
 left: calc(50% - 265px/2);
 top: calc(50% - 290px/2 + 30.5px);
 
@@ -55,8 +43,8 @@ ${EmployeeCardContainerStyled}:hover & {
     padding: 145px 25px 25px;
 
     position: absolute;
-    width: 15.8rem;
-    height: 20.25rem;
+    width: 95%;
+    height: 60%;
     left: calc(50% - 285px/2);
     top: calc(50% - 356px/2 + 34.5px);
 
@@ -73,7 +61,7 @@ export const EmployeeCardImageStyled = styled.div<{photo:string}>`
 position: absolute;
 width: 9.25rem;
 height: 9.25rem;
-left: calc(50% - 130px/2 + 0.32px);
+left: 10%;
 top: calc(50% - 160px/2 - 95.5px);
 border-radius:50%;
 z-index:3;
@@ -86,7 +74,7 @@ ${EmployeeCardContainerStyled}:hover & {
     position: absolute;
     width: 11.25rem;
     height: 11.25rem;
-    left: calc(50% - 10.25rem/2);
+    left: calc(50% - 12.25rem/2);
     top: calc(50% - 180px/2 - 122.5px);}
 
 `;
