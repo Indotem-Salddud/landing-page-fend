@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 export const ContainerStyled = styled.div`
   position: center;
-  width: 115vh;
+  width: 116vh;
   height: 110vh;
   z-index: 0;
   margin: auto;
@@ -15,11 +15,6 @@ export const ContainerStyled = styled.div`
   z-index: 1;
 
 `;
-
-
-
-
-
 
 
 export const CaruselRightButton = styled.button<{ background:string}>`
@@ -32,7 +27,6 @@ right: 20%;
 top: 30%;
 background:url(${({background}) => background});;
 z-index:10;
-transform:  translateX(50%);
 
 `;
 
@@ -46,36 +40,14 @@ left: 18%;
 top: 30%;
 background:url(${({background}) => background});
 z-index:10;
-transform: translateX(-50%);
 
 `;
 
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
-  position: center;
+  position: relative;
   width: 100%;
   height: 60%;
-  z-index: 2;
-  animation: next 50s infinite linear;
-    &:hover  {
-    animation-play-state: paused;}
-   
-}
 
-@keyframes next {
-  0% {
-    transform: translate(0, 0);
-  }
-  30% {
-    transform: translateX(-30%);
-  }
-  60% {
-    transform: translate(-60%, 0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-    
   `; 

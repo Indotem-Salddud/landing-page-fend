@@ -1,26 +1,9 @@
-import React from "react";
-import * as PropTypes from "prop-types";
 import { ContainerStyled, CaruselLeftButton, CaruselRightButton, CardContainer} from "../Employee_carousel/EmployeeCarouselStyled";
 import EmployeeCard from "../Employee_card/EmployeeCard";
 import { data } from "../Employee_card/EmployeeCardsData";
 import rArrow from "../../../resources/icons/ep_arrow-right-bold.png"
 import lArrow from "../../../resources/icons/ep_arrow-left-bold.png"
-
-
-
-
-
-// * Define proptypes
-const CardsCarouselProptypes = {
-  cards:PropTypes.arrayOf(PropTypes.string),
-  handleClick:PropTypes.func.isRequired,
-  handleClick2:PropTypes.func.isRequired
-};
-
-
-
-// * Define typealias for proptypes
-type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
+import { useState, useEffect } from "react";
 
 
 
@@ -29,26 +12,38 @@ type CardsCarouselProps = PropTypes.InferProps<typeof CardsCarouselProptypes>;
  * * Carlos y Javi - 2022/02/17
  * @param props {any}
  */
+// * Define cards array
+const test = data.map((person:any, index:number) => (
+  <div className="mt-2"  key={index}  ><EmployeeCard {...person} /></div>
+))
 
 
- const CarouselCont: React.FC<CardsCarouselProps> = (props:any) => (
 
-    <ContainerStyled >
-      <CardContainer id="Container">
-      {data.map((person:any) => (
-          <div className="mt-2" ><EmployeeCard {...person} /></div>
-      ))}
-      </CardContainer>
+export default function CarouselCont(){
+ 
+ var [pos, setPos] = useState(0);
+ 
+
+  useEffect(() => {
     
+  }, [pos])
+  let images = [test[pos],test[pos+1],test[pos+2],test[pos+3]];
+  return (
+    <ContainerStyled >
+      <CardContainer id="container">
+        {images}
+
+      </CardContainer>
+
       <CaruselLeftButton background={lArrow}
-      onClick={() => props.handleClick()}
-      />
+      onClick={() => {if (pos<=4) {
+          setPos(pos=0) ;return
+      }setPos(pos - 4);}} />
       <CaruselRightButton background={rArrow}
-      onClick={() => props.handleClick2()}
-      />
+      onClick={() => {if (pos+3>=test.length-4) {
+          setPos(pos=test.length-4);return
+      } setPos(pos + 4);}} />
      </ContainerStyled>
 
   )
-;
-// * Export component
-export default CarouselCont;
+};

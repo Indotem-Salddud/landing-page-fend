@@ -16,11 +16,7 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Cards component</h1>
         <div className="mt-3">
-        <CarouselCont  handleClick={() => {
-            console.log("boton pulsado")
-            }}  handleClick2={() => { 
-                console.log("boton 2 pulsado")
-            }}  />
+        <CarouselCont />
            
         </div>
       </div>
