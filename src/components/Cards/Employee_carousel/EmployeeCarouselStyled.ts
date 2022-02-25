@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 export const ContainerStyled = styled.div`
   position: center;
-  width: 116vh;
+  width: 122vh;
   height: 110vh;
   z-index: 0;
   margin: auto;
@@ -23,7 +23,7 @@ position: absolute;
 border:none;
 width: 48.23px;
 height: 48px;
-right: 20%;
+right: 18%;
 top: 30%;
 background:url(${({background}) => background});;
 z-index:10;
@@ -36,7 +36,7 @@ position: absolute;
 border:none;
 width: 48.23px;
 height: 48px;
-left: 18%;
+left: 17%;
 top: 30%;
 background:url(${({background}) => background});
 z-index:10;
@@ -49,5 +49,6 @@ export const CardContainer = styled.div`
   position: relative;
   width: 100%;
   height: 60%;
+  left:1%
 
   `; 

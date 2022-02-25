@@ -1,9 +1,9 @@
 import { ContainerStyled, CaruselLeftButton, CaruselRightButton, CardContainer} from "../Employee_carousel/EmployeeCarouselStyled";
-import EmployeeCard from "../Employee_card/EmployeeCard";
 import { data } from "../Employee_card/EmployeeCardsData";
 import rArrow from "../../../resources/icons/ep_arrow-right-bold.png"
 import lArrow from "../../../resources/icons/ep_arrow-left-bold.png"
 import { useState, useEffect } from "react";
+import EmployeeCard from "../Employee_card/EmployeeCards";
 
 
 
