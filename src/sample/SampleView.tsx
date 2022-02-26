@@ -3,6 +3,7 @@ import "./SampleStyle.css";
 import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
 import SecondaryButton from "../components/Buttons/Secondary/Button.Secondary";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 
 /**
  * ! Sample view project
@@ -11,6 +12,14 @@ import Footer from "../components/Footer/Footer";
 const SampleView: React.FC = () => {
   return (
     <>
+      
+      <Navbar 
+      text1="¿Cómo funciona?"
+      text2="Nuestra App"
+      text3="Sobre nosotros">
+      </Navbar>
+      
+
       <div className="mt-3">
         <h1>Primary Button</h1>
         <div className="mt-3">

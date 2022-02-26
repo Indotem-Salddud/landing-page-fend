@@ -71,6 +71,72 @@ export const Tokens = {
     },
   Margin: {
     Small:"5%"
+  },
+  Navbar:{
+    Height: "73px",
+    Left: "80px",
+    Top: "28px",
+    Justify:"space-between",
+    Display: "flex",
+    FlexDirection: "row",
+    AlignItems: "center",
+    Position: "absolute"
+  },
+  NavbarDiv:{
+    Height:"73.3px",
+    Width:"804px",
+    Left:"476px",
+    Display:"flex",
+    FlexDirection:"row",
+    JustifyContent:"center",
+    AlignItems:"center",
+    Position:"static",
+
+  },
+  NavbarAnchor: {
+    Height: "24px",
+    Width: "167px",
+    Position: "absolute",
+    Right: "3.47%",
+    FontFamily: "Rubik",
+    FontStyle: "normal",
+    FontWeight: "bold",
+    FontSize: "20px",
+    LineHeight: "24px",
+    Display: "flex",
+    AlignItems: "center",
+    Color: "#732650"
+
+  },
+
+  NavbarAnchor2: {
+    Height: "24px",
+    Width: "120px",
+    FontFamily: "Rubik",
+    FontSize: "20px",
+    FontStyle: "normal",
+    FontWeight: "bold",
+    LineHeight: "24px",
+    TextAlign: "left",
+    Color: "#732650"
+
+  },
+
+  NavbarAnchor3:{
+    Height: "24px",
+    Width: "148px",
+    FontFamily: "Rubik",
+    FontSize: "20px",
+    FontStyle: "normal",
+    FontWeight: "bold",
+    LineHeight: "24px",
+    TextAlign: "left",
+    Position: "absolute",
+    Right: "1.99%",
+    Display: "flex",
+    AlignItems: "center",
+    Color: "#732650"
   }
+
  
 };
