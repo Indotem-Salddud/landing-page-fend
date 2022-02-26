@@ -22,18 +22,18 @@ const NavbarProptypes = {
   <NavbarStyled className="navbar navbar-expand-xl navbar-dark fs-3 ms-auto bg-light">
       <div className="container">
         <NavbarDivStyled>
-          <a>
+          
             <NavbarAnchorStyled>{props.text1}</NavbarAnchorStyled>
-          </a>
-          <a>
+          
+          
             <NavbarAnchor2Styled>{props.text2}</NavbarAnchor2Styled>
-          </a>
-          <a>
+          
+          
             <NavbarAnchor3Styled>{props.text3}</NavbarAnchor3Styled>
-          </a>
-          <a>
+          
+          
             <NavbarButtonStyled></NavbarButtonStyled>
-          </a>
+          
         </NavbarDivStyled>
       </div>
   </NavbarStyled>
