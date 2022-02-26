@@ -12,11 +12,9 @@ const SampleView: React.FC = () => {
       
       <div className="mt-3">
         <h1>Cards component</h1>
-        <div className="mt-3 hola">
-        <CarouselCont  
-        
-        />
-          
+        <div className="mt-3">
+        <CarouselCont />
+           
         </div>
       </div>
     </>

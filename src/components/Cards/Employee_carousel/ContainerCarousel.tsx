@@ -1,5 +1,3 @@
-import React  from "react";
-import * as PropTypes from "prop-types";
 import { ContainerStyled, CaruselLeftButton, CaruselRightButton, CardContainer} from "../Employee_carousel/EmployeeCarouselStyled";
 import EmployeeCard from "../Employee_card/EmployeeCard";
 import { data } from "../Employee_card/EmployeeCardsData";
@@ -14,8 +12,8 @@ import { useState, useEffect } from "react";
  * * Carlos y Javi - 2022/02/17
  * @param props {any}
  */
-
-const test = data.map((person:any, index:number) => (     
+// * Define cards array
+const test = data.map((person:any, index:number) => (
   <div className="mt-2"  key={index}  ><EmployeeCard {...person} /></div>
 ))
 
@@ -23,29 +21,29 @@ const test = data.map((person:any, index:number) => (
 
 export default function CarouselCont(){
  
- const [pos, setPos] = useState(0);
-  
-  
+ var [pos, setPos] = useState(0);
+ 
+
   useEffect(() => {
-    console.log("ok")
+    
   }, [pos])
-  let caca = [test[pos],test[pos + 1],test[pos + 2], test[pos + 3]];
+  let images = [test[pos],test[pos+1],test[pos+2],test[pos+3]];
   return (
     <ContainerStyled >
       <CardContainer id="container">
-        {caca}
-        
+        {images}
+
       </CardContainer>
-      
-      <CaruselLeftButton background={lArrow}   />
+
+      <CaruselLeftButton background={lArrow}
+      onClick={() => {if (pos<=4) {
+          setPos(pos=0) ;return
+      }setPos(pos - 4);}} />
       <CaruselRightButton background={rArrow}
-      onClick={() => setPos(prevPos => prevPos + 1)}   />
+      onClick={() => {if (pos+3>=test.length-4) {
+          setPos(pos=test.length-4);return
+      } setPos(pos + 4);}} />
      </ContainerStyled>
 
   )
-}; 
-
-
-
-
-
+};
