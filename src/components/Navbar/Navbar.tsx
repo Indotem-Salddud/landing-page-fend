@@ -25,7 +25,7 @@ const NavbarProptypes = {
   <NavbarStyled className="navbar navbar-expand-xl navbar-dark fs-3 ms-auto bg-light">
 
         
-        <NavbarLogoStyled> <img src={navbarlogo} /> </NavbarLogoStyled>
+        <NavbarLogoStyled> <img src={navbarlogo} alt="" /> </NavbarLogoStyled>
         
         <NavbarDivStyled>
           
@@ -41,7 +41,7 @@ const NavbarProptypes = {
             <NavbarButtonStyled type="button" role="button" >{props.title}</NavbarButtonStyled>
 
             
-            <NavbarIconStyled> <img src={navbaricon} /></NavbarIconStyled>
+            <NavbarIconStyled> <img src={navbaricon} alt="" /></NavbarIconStyled>
           
         </NavbarDivStyled>
 
