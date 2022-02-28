@@ -7,13 +7,13 @@ export const NavbarStyled = styled.nav`
     display: ${Tokens.Navbar.Display};
     flex-direction: ${Tokens.Navbar.FlexDirection};
     align-items: ${Tokens.Navbar.AlignItems};
+    top: ${Tokens.Navbar.Top}
 
 `;
-
 export const NavbarDivStyled = styled.div`
     height: ${Tokens.NavbarDiv.Height};
-    width: ${Tokens.NavbarDiv.Width};
     left: ${Tokens.NavbarDiv.Left};
+    width: ${Tokens.NavbarDiv.Width};
     display: ${Tokens.NavbarDiv.Display};
     flex-direction: ${Tokens.NavbarDiv.FlexDirection};
     justify-content: ${Tokens.NavbarDiv.JustifyContent};
@@ -22,52 +22,87 @@ export const NavbarDivStyled = styled.div`
 
 `;
 
-export const NavbarAnchorStyled = styled.text`
-    height: ${Tokens.NavbarAnchor.Height};
-    width: ${Tokens.NavbarAnchor.Width};
-    position: ${Tokens.NavbarAnchor.Position};
-    right: ${Tokens.NavbarAnchor.Right};
-    font-family: ${Tokens.NavbarAnchor.FontFamily};
-    font-style: ${Tokens.NavbarAnchor.FontStyle};
-    font-weight: ${Tokens.NavbarAnchor.FontWeight};
-    font-size: ${Tokens.NavbarAnchor.FontSize};
-    line-height: ${Tokens.NavbarAnchor.LineHeight};
-    display: ${Tokens.NavbarAnchor.Display};
-    align-items: ${Tokens.NavbarAnchor.AlignItems};
-    color: ${Tokens.NavbarAnchor.Color};
+export const NavbarLogoStyled = styled.image`
+    position: ${Tokens.NavbarLogo.Position};
+    width: ${Tokens.NavbarLogo.Width};
+    height: ${Tokens.NavbarLogo.Height};
+    top: ${Tokens.NavbarLogo.Top};
+    margin: ${Tokens.NavbarLogo.Margin};
 
 `;
 
-export const NavbarAnchor2Styled = styled.text`
-    height: ${Tokens.NavbarAnchor2.Height};
-    width: ${Tokens.NavbarAnchor2.Width};
-    font-family: ${Tokens.NavbarAnchor2.FontFamily};
-    font-size: ${Tokens.NavbarAnchor2.FontSize};
-    font-style: ${Tokens.NavbarAnchor2.FontStyle};
-    font-weight: ${Tokens.NavbarAnchor2.FontWeight};
-    line-height: ${Tokens.NavbarAnchor2.LineHeight};
-    text-align: ${Tokens.NavbarAnchor2.TextAlign};
-    color: ${Tokens.NavbarAnchor2.Color}
+
+
+
+export const NavbarTextStyled = styled.text`
+    height: ${Tokens.NavbarText.Height};
+    width: ${Tokens.NavbarText.Width};
+    right: ${Tokens.NavbarText.Right};
+    font-family: ${Tokens.NavbarText.FontFamily};
+    font-style: ${Tokens.NavbarText.FontStyle};
+    font-weight: ${Tokens.NavbarText.FontWeight};
+    font-size: ${Tokens.NavbarText.FontSize};
+    line-height: ${Tokens.NavbarText.LineHeight};
+    display: ${Tokens.NavbarText.Display};
+    align-items: ${Tokens.NavbarText.AlignItems};
+    color: ${Tokens.NavbarText.Color};
+
 `;
 
-export const NavbarAnchor3Styled = styled.text`
-    height: ${Tokens.NavbarAnchor3.Height};
-    width: ${Tokens.NavbarAnchor3.Width};
-    font-family: ${Tokens.NavbarAnchor3.FontFamily};
-    font-size: ${Tokens.NavbarAnchor3.FontSize};
-    font-style: ${Tokens.NavbarAnchor3.FontStyle};
-    font-weight: ${Tokens.NavbarAnchor3.FontWeight};
-    line-height: ${Tokens.NavbarAnchor3.LineHeight};
-    text-align: ${Tokens.NavbarAnchor3.TextAlign};
-    position: ${Tokens.NavbarAnchor3.Position};
-    right: ${Tokens.NavbarAnchor3.Right};
-    display: ${Tokens.NavbarAnchor3.Display};
-    align-items: ${Tokens.NavbarAnchor3.AlignItems};
-    color: ${Tokens.NavbarAnchor3.Color};
+export const NavbarText2Styled = styled.text`
+    height: ${Tokens.NavbarText2.Height};
+    width: ${Tokens.NavbarText2.Width};
+    font-family: ${Tokens.NavbarText2.FontFamily};
+    font-size: ${Tokens.NavbarText2.FontSize};
+    font-style: ${Tokens.NavbarText2.FontStyle};
+    font-weight: ${Tokens.NavbarText2.FontWeight};
+    line-height: ${Tokens.NavbarText2.LineHeight};
+    -align: ${Tokens.NavbarText2.TextAlign};
+    color: ${Tokens.NavbarText2.Color}
 `;
 
-export const NavbarButtonStyled = styled.a`
-    
+export const NavbarText3Styled = styled.text`
+    height: ${Tokens.NavbarText3.Height};
+    width: ${Tokens.NavbarText3.Width};
+    font-family: ${Tokens.NavbarText3.FontFamily};
+    font-size: ${Tokens.NavbarText3.FontSize};
+    font-style: ${Tokens.NavbarText3.FontStyle};
+    font-weight: ${Tokens.NavbarText3.FontWeight};
+    line-height: ${Tokens.NavbarText3.LineHeight};
+    text-align: ${Tokens.NavbarText3.TextAlign};
+    right: ${Tokens.NavbarText3.Right};
+    display: ${Tokens.NavbarText3.Display};
+    align-items: ${Tokens.NavbarText3.AlignItems};
+    color: ${Tokens.NavbarText3.Color};
+`;
 
+export const NavbarButtonStyled = styled.button`
+    display: ${Tokens.NavbarButton.Display};
+    flex-direction: ${Tokens.NavbarButton.FlexDirection};
+    justify-content: ${Tokens.NavbarButton.JustifyContent};
+    align-items: ${Tokens.NavbarButton.AlignItems};
+    padding: ${Tokens.NavbarButton.Padding};
+    position: ${Tokens.NavbarButton.Position};
+    width: ${Tokens.NavbarButton.Width};
+    height: ${Tokens.NavbarButton.Height};
+    left: ${Tokens.NavbarButton.Left};
+    top: ${Tokens.NavbarButton.Top};
+    background: ${Tokens.NavbarButton.Background};
+    box-shadow: ${Tokens.NavbarButton.BoxShadow};
+    border-radius: ${Tokens.NavbarButton.BorderRadius};
+    font-family: ${Tokens.NavbarButton.FontFamily};
+    font-size: ${Tokens.NavbarButton.FontSize};
+    font-style: ${Tokens.NavbarButton.FontStyle};
+    font-weight: ${Tokens.NavbarButton.FontWeight};
+    line-height: ${Tokens.NavbarButton.LineHeight};
+`;
+
+export const NavbarIconStyled = styled.div`
+    position: ${Tokens.NavbarIcon.Position};
+    width: ${Tokens.NavbarIcon.Width};
+    height: ${Tokens.NavbarIcon.Height};
+    left: ${Tokens.NavbarIcon.Left};
+    border-radius: ${Tokens.NavbarIcon.BorderRadius};
+    margin: ${Tokens.NavbarIcon.Margin};
 
 `;

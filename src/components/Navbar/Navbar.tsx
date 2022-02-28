@@ -1,6 +1,8 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { NavbarAnchor2Styled, NavbarAnchor3Styled, NavbarButtonStyled, NavbarAnchorStyled, NavbarDivStyled, NavbarStyled } from "./NavbarStyled";
+import { NavbarText2Styled, NavbarText3Styled, NavbarButtonStyled, NavbarTextStyled, NavbarDivStyled, NavbarStyled, NavbarLogoStyled, NavbarIconStyled} from "./NavbarStyled";
+import navbaricon from "./../../resources/static/Navbar.Icon.png";
+import navbarlogo from "./../../resources/static/Navbar.Logo.png";
 
 // * Define proptypes
 const NavbarProptypes = {
@@ -8,6 +10,7 @@ const NavbarProptypes = {
     text2: PropTypes.string,
     text3: PropTypes.string,
     text4: PropTypes.string,
+    title: PropTypes.string,
   };
   
   // * Define typealias for proptypes
@@ -20,22 +23,30 @@ const NavbarProptypes = {
  */
  const Navbar: React.FC<NavbarProps> = (props: any) => (
   <NavbarStyled className="navbar navbar-expand-xl navbar-dark fs-3 ms-auto bg-light">
-      <div className="container">
+
+        
+        <NavbarLogoStyled> <img src={navbarlogo} /> </NavbarLogoStyled>
+        
         <NavbarDivStyled>
           
-            <NavbarAnchorStyled>{props.text1}</NavbarAnchorStyled>
+            <NavbarTextStyled>{props.text1}</NavbarTextStyled>
           
           
-            <NavbarAnchor2Styled>{props.text2}</NavbarAnchor2Styled>
+            <NavbarText2Styled>{props.text2}</NavbarText2Styled>
           
           
-            <NavbarAnchor3Styled>{props.text3}</NavbarAnchor3Styled>
+            <NavbarText3Styled>{props.text3}</NavbarText3Styled>
           
           
-            <NavbarButtonStyled></NavbarButtonStyled>
+            <NavbarButtonStyled type="button" role="button" >{props.title}</NavbarButtonStyled>
+
+            
+            <NavbarIconStyled> <img src={navbaricon} /></NavbarIconStyled>
           
         </NavbarDivStyled>
-      </div>
+
+        
+      
   </NavbarStyled>
   );
   

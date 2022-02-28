@@ -16,7 +16,9 @@ const SampleView: React.FC = () => {
       <Navbar 
       text1="¿Cómo funciona?"
       text2="Nuestra App"
-      text3="Sobre nosotros">
+      text3="Sobre nosotros"
+      title="Contáctanos">
+      
       </Navbar>
       
 

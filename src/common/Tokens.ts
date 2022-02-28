@@ -74,18 +74,16 @@ export const Tokens = {
   },
   Navbar:{
     Height: "73px",
-    Left: "80px",
-    Top: "28px",
     Justify:"space-between",
     Display: "flex",
     FlexDirection: "row",
     AlignItems: "center",
-    Position: "absolute"
+    Top: "28px",
   },
   NavbarDiv:{
     Height:"73.3px",
-    Width:"804px",
     Left:"476px",
+    Width:"804px",
     Display:"flex",
     FlexDirection:"row",
     JustifyContent:"center",
@@ -93,10 +91,9 @@ export const Tokens = {
     Position:"static",
 
   },
-  NavbarAnchor: {
+  NavbarText: {
     Height: "24px",
     Width: "167px",
-    Position: "absolute",
     Right: "3.47%",
     FontFamily: "Rubik",
     FontStyle: "normal",
@@ -109,7 +106,7 @@ export const Tokens = {
 
   },
 
-  NavbarAnchor2: {
+  NavbarText2: {
     Height: "24px",
     Width: "120px",
     FontFamily: "Rubik",
@@ -122,7 +119,7 @@ export const Tokens = {
 
   },
 
-  NavbarAnchor3:{
+  NavbarText3:{
     Height: "24px",
     Width: "148px",
     FontFamily: "Rubik",
@@ -131,12 +128,49 @@ export const Tokens = {
     FontWeight: "bold",
     LineHeight: "24px",
     TextAlign: "left",
-    Position: "absolute",
     Right: "1.99%",
     Display: "flex",
     AlignItems: "center",
     Color: "#732650"
-  }
+  },
 
- 
+  NavbarButton:{
+    Display: "flex",
+    FlexDirection: "row",
+    JustifyContent: "center",
+    AlignItems: "center",
+    Padding: "16px 45.5px",
+    Position: "static",
+    Width: "144px",
+    Height: "52px",
+    Left: "548px",
+    Top: "10.65px",
+    Background: "#E0D1DA",
+    BoxShadow: "0px 4px 4px rgba(0, 0, 0, 0.08)",
+    BorderRadius: "10px",
+    FontFamily: "Rubik",
+    FontSize: "20px",
+    FontStyle: "normal",
+    FontWeight: "bold",
+    LineHeight: "24px"
+  },
+
+  NavbarLogo:{
+    Position: "static",
+    Width: "185.36px",
+    Height: "32.58px",
+    Top: "20.36px",
+    Margin: "0px 233px",
+  },
+
+  NavbarIcon:{
+    Position: "static",
+    Width: "72px",
+    Height: "73.3px",
+    Left: "732px",
+    BoxShadow: "-2px 2px 7px rgba(0, 0, 0, 0.16)",
+    BorderRadius: "54px",
+    Margin: "0px 40px",
+  },
+
 };
