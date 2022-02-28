@@ -16,7 +16,17 @@ h1 {
 }
 .mt-2 {
   margin: 2%;
- 
+  position: static;
+  width: 265px;
+  left: 280px;
+  top: 0px;
+  bottom: 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 15px;
 }
 #test1{
   width: 90%;
@@ -30,16 +40,23 @@ h1 {
   width: 40px;
   height: 40px;
 }
+.animateRight{
+  animation: fadeinright 1s ease-in-out ;
 
-/* .prevCard {
-  left: 0;
+}
+.animateLeft{
+  animation: fadeinleft 1s ease-in-out ;
+
+}
+@keyframes fadeinright {
+  from { transform: translate(100%, 0); }
+  to   { transform: translate(0, 0); }
 }
 
-.activeCard {
-  left: 50%;
-  transform: translateX(-50%); 
-}
+@keyframes fadeinleft {
+  from { transform: translate(-100%, 0); }
+  to   { transform: translate(0, 0); }
+} 
 
-.nextCard {
-  right: 0;
-} */
+
+

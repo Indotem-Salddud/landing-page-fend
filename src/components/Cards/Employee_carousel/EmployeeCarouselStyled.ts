@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 export const ContainerStyled = styled.div`
   position: center;
-  width: 116vh;
+  width: 122vh;
   height: 110vh;
   z-index: 0;
   margin: auto;
@@ -22,7 +22,7 @@ position: absolute;
 border:none;
 width: 48.23px;
 height: 48px;
-right: 12%;
+right: 18%;
 top: 30%;
 background:url(${({background}) => background});;
 z-index:10;
@@ -35,7 +35,7 @@ position: absolute;
 border:none;
 width: 48.23px;
 height: 48px;
-left: 8%;
+left: 17%;
 top: 30%;
 background:url(${({background}) => background});
 z-index:10;
@@ -47,7 +47,7 @@ export const CardContainer = styled.div`
   flex-direction: row;
   position: relative;
   width: 100%;
-  background-color: pink;
-  height: 60%;
+  height: 80%;
+  left:1%;
 
   `; 
