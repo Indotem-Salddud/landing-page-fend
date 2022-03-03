@@ -1,12 +1,13 @@
 body {
   background-color: white;
   margin: 5%;
-  width: 100%;
+  width: 90%;
 }
 
 .mt-3 {
   margin-top: 3%;
   position: relative;
+  width: 80%;
 }
 
 h1 {
@@ -15,16 +16,12 @@ h1 {
   font-weight: bold;
 }
 .mt-2 {
-  margin: 2%;
   position: static;
-  width: 265px;
-  left: 280px;
-  top: 0px;
-  bottom: 0px;
-
+  width: 25vh;
+  height: auto;
   /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 15px;
+  margin: 2vh;
 }
