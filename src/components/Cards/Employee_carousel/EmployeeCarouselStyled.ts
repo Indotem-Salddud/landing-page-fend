@@ -6,10 +6,11 @@ import styled from "styled-components";
 
 export const ContainerStyled = styled.div`
   position: center;
-  width: 122vh;
+  width: 152vh;
   height: 110vh;
   z-index: 0;
   margin: auto;
+  background-color: pink;
  overflow: hidden; 
   z-index: 1;
 

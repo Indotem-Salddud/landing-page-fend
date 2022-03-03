@@ -27,7 +27,8 @@ export default function CarouselCont(){
   useEffect(() => {
     
   }, [pos])
-  let images = [test[pos],test[pos+1],test[pos+2],test[pos+3]];
+  let images_mov = [test[pos],test[pos+1]];
+  let images_pc = [test[pos],test[pos+1],test[pos+2],test[pos+3]];
 
   let show = document.getElementById("container");
   
@@ -36,11 +37,53 @@ export default function CarouselCont(){
     <ContainerStyled >
       <CardContainer id="container" >
         
-        {images}
+        {images_mov}
 
       </CardContainer>
 
-      <CaruselLeftButton background={lArrow}
+      <CardContainer id="pc"  >
+        
+        {images_pc}
+
+      </CardContainer>
+
+      <CaruselLeftButton id="pc_mvl_left" background={lArrow}
+      onClick={() => {
+        if(pos !== 0){
+          show?.classList.add("animateLeft");          
+          setTimeout(() => {show?.classList.remove("animateLeft")},1000)
+          setTimeout(() => {show?.classList.remove("animateRight")},1000)
+        } 
+        
+        if (pos<=2) {
+          setPos(pos=0);
+          
+          return
+      }
+      setPos(pos - 2);
+      
+  
+    }} 
+      />
+      <CaruselRightButton id="pc_mvl_right" background={rArrow}
+      onClick={() => {
+        if(pos !== test.length - 2){
+          show?.classList.add("animateRight");
+          setTimeout(() => {show?.classList.remove("animateLeft")},1000)
+          setTimeout(() => {show?.classList.remove("animateRight")},1000)
+           
+        } 
+        if (pos+1>=test.length-2) {
+          setPos(pos=test.length-2);
+          
+          return
+      } setPos(pos + 2);
+      }
+      }
+      
+      />
+
+<CaruselLeftButton id="pc_button_left" background={lArrow}
       onClick={() => {
         if(pos !== 0){
           show?.classList.add("animateLeft");          
@@ -58,7 +101,8 @@ export default function CarouselCont(){
   
     }} 
       />
-      <CaruselRightButton background={rArrow}
+
+<CaruselRightButton id="pc_button_right" background={rArrow}
       onClick={() => {
         if(pos !== test.length - 4){
           show?.classList.add("animateRight");
@@ -71,12 +115,7 @@ export default function CarouselCont(){
           
           return
       } setPos(pos + 4);
-      
-      
-      
-     /* show.style.animationName = "fadein";  */
       }
-      
       }
       
       />

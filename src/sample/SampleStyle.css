@@ -28,6 +28,29 @@ h1 {
   flex-grow: 0;
   margin: 0px 15px;
 }
+#pc{
+  display: flex;
+}
+#container{
+  display: none;
+}
+#pc_button_right{
+  position: relative;
+  top: -135px;
+  left: 980px;
+  display: flex;
+}
+#pc_button_left{
+  position: relative;
+  top: -148px;
+  display: flex;
+}
+#pc_mvl_right{
+  display: none;
+}
+#pc_mvl_left{
+  display: none;
+}
 #test1{
   width: 90%;
   display: flex;
@@ -59,4 +82,24 @@ h1 {
 } 
 
 
-
+@media (max-width: 600px){
+  #pc{
+    display: none;
+  }
+  #container{
+    display: flex;
+  }
+  #pc_button_right{
+    display: none;
+  }
+  #pc_button_left{
+   
+    display: none;
+  }
+  #pc_mvl_right{
+    display: flex;
+  }
+  #pc_mvl_left{
+    display: flex;
+  }
+}
