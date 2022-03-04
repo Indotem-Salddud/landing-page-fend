@@ -25,20 +25,23 @@ type EmployeeCardProps = PropTypes.InferProps<typeof EmployeeCardProptypes>;
  * @param props {any}
  */
 const EmployeeCard: React.FC<EmployeeCardProps> = (props: any) => (
-<EmployeeCardContainer>
-  
+
+<EmployeeCardContainer className="img-fluid">
   <div className="cardBackGround">
-    <div className="pictureContainer"><EmployeeCardImage photo={props.photo}/></div>
-    <div className="cardTitleContainer">
+    <div className="pictureContainer"><EmployeeCardImage className="card-img-top" photo={props.photo}/></div>
+    <div className="card-title">
     <div className="title">{props.name}</div>
     <div className="position">{props.position}</div>
     </div>
+    <div className="textContainer">
     <div className="text">
     {props.text}
     <div className="text2">{props.text2}</div> 
     </div>
+    </div>
   </div>
 </EmployeeCardContainer>
+
 )
 
 

@@ -1,12 +1,13 @@
 body {
   background-color: white;
   margin: 5%;
-  width: 100%;
+  width: 90%;
 }
 
 .mt-3 {
   margin-top: 3%;
   position: relative;
+  width: 80%;
 }
 
 h1 {
@@ -15,54 +16,24 @@ h1 {
   font-weight: bold;
 }
 .mt-2 {
-  margin: 2%;
   position: static;
-  width: 265px;
-  left: 280px;
-  top: 0px;
-  bottom: 0px;
-
+  width: 25vh;
+  height: auto;
   /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 15px;
+  margin: 2vh;
 }
-#pc{
+
+.carouselfather{
   display: flex;
-}
-#container{
-  display: none;
-}
-#pc_button_right{
-  position: relative;
-  top: -135px;
-  left: 980px;
-  display: flex;
-}
-#pc_button_left{
-  position: relative;
-  top: -148px;
-  display: flex;
-}
-#pc_mvl_right{
-  display: none;
-}
-#pc_mvl_left{
-  display: none;
-}
-#test1{
-  width: 90%;
-  display: flex;
-  background-color: yellowgreen;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  justify-content: center;
   align-items: center;
 }
 
-.icons{
-  width: 40px;
-  height: 40px;
-}
+
 .animateRight{
   animation: fadeinright 1s ease-in-out ;
 
@@ -82,24 +53,4 @@ h1 {
 } 
 
 
-@media (max-width: 600px){
-  #pc{
-    display: none;
-  }
-  #container{
-    display: flex;
-  }
-  #pc_button_right{
-    display: none;
-  }
-  #pc_button_left{
-   
-    display: none;
-  }
-  #pc_mvl_right{
-    display: flex;
-  }
-  #pc_mvl_left{
-    display: flex;
-  }
-}
+
