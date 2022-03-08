@@ -1,0 +1,127 @@
+.mt-2 {
+    display:flex;
+    justify-content: center;
+    width: 25vh;
+    height: 5rem;
+    margin: 2vh;
+  }
+  
+  .carouselfather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+    
+  #pc{
+    display: flex;
+  }
+  #pc-sm{
+    display: none;
+  }
+  #mobile{
+    display: none;
+  }
+  
+  #pc_button_left{
+    display: flex;
+  } 
+  #pc_button_right{
+    display: flex;
+  }
+  #mobile_button_left{
+    display: none;
+  }
+  #mobile_button_right{
+    display: none;
+  }
+  #pc_small_button_left{
+    display: none;
+  }
+  #pc_small_button_right{
+    display: none;
+  }
+  
+  
+  @media (max-width: 1300px),(max-height: 690px){
+    #pc{
+      display: none;
+    }
+    #pc-sm{
+      display: flex;
+    }
+    #mobile{
+      display: none;
+    }
+    #pc_small_button_left{
+      display: flex;
+    }
+    #pc_small_button_right{
+      display: flex;
+    }
+    #pc_button_left{
+      display: none;
+    } 
+    #pc_button_right{
+      display: none;
+    }
+    #mobile_button_left{
+      display: none;
+    }
+    #mobile_button_right{
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 700px),(max-height: 670px){
+    #pc{
+      display: none;
+    }
+    #pc-sm{
+      display: none;
+    }
+    #mobile{
+      display: flex;
+    }
+    #mobile_button_left{
+      display: flex;
+    }
+    #mobile_button_right{
+      display: flex;
+    }
+    #pc_small_button_left{
+      display: none;
+    }
+    #pc_small_button_right{
+      display: none;
+    }
+    #pc_button_left{
+      display: none;
+    } 
+    #pc_button_right{
+      display: none;
+    }
+  }
+  
+  
+  
+  
+  .animateRight{
+    animation: fadeinright 1s ease-in-out ;
+  }
+  
+  .animateLeft{
+    animation: fadeinleft 1s ease-in-out ;
+  }
+  
+  @keyframes fadeinright {
+    from { transform: translate(100%, 0); }
+    to   { transform: translate(0, 0); }
+  }
+  
+  @keyframes fadeinleft {
+    from { transform: translate(-100%, 0); }
+    to   { transform: translate(0, 0); }
+  } 

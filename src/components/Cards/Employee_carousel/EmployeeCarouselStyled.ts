@@ -7,67 +7,14 @@ import styled from "styled-components";
 export const ContainerStyled = styled.div`
   position: center;
   display: flex;
-  width: 145vh;
-  height: 70vh;
+  width: auto;
+  height: 35rem;
   z-index: 1;
   background-color: pink;
   overflow: hidden;
   
-#pc{
-  display: flex;
-}
-#pc-sm{
-  display: none;
-}
-#mobile{
-  display: none;
-}
-#pc_button_right{
-  position: relative;
-  top: -28vh;
-  right: -128vh;
-  display: flex;
-}
-#pc_button_left{
-  position: relative;
-  top: 20vh;
-  display: flex;
-}
-#pc_small_button_right{
-  display: none;
-  position: relative;
-  top: -27vh;
-  right: -71vh;
-}
-#pc_small_button_left{
-  display: none;
-  top: 22vh;
-  left:6vh;
-}
 
-#mobile_button_right{
-  display: none;
-  position: relative;
-  top: -25vh;
-  right: -43vh;
-}
-#mobile_button_left{
-  display: none;
-  top: 24vh;
-  left: 4vh;
-}
-#test1{
-  width: 90%;
-  display: flex;
-  background-color: yellowgreen;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.icons{
-  width: 40px;
-  height: 40px;
-}
 .animateRight{
   animation: fadeinright 1s ease-in-out ;
 
@@ -87,34 +34,33 @@ export const ContainerStyled = styled.div`
 } 
 
 
-@media (max-width: 1100px){
-  .cardBackGround{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 5rem 1rem 1rem;
-margin-left:6%;
-
-position: relative;
-width: 14rem;
-height: 14rem;
 
 
-background: #E0E8DD;
-border-radius: 30px;
-z-index:0}
+.cardBackGround{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem 1rem;
+  /* margin-left:6%; */
 
-.pictureContainer{
-position: absolute;
-width: auto;
-height: auto;
-left: 16%;
-top: -20%;
+  position: relative;
+  width: 14rem;
+  height: 14rem;
 
 
+  background: #E0E8DD;
+  border-radius: 30px;
+  z-index:0
 }
 
+  .pictureContainer{
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 16%;
+  top: -20%;
+}
 
 .cardTitleContainer{
 
@@ -242,49 +188,9 @@ margin: 0.1vh;
 
 }
 
-  #pc{
-    display: none;
-  }
-  #pc-sm{
-    display: flex;
-  }
-  #pc_button_right{
-    display: none;
-  }
-  #pc_button_left{
-   
-    display: none;
-  }
-  #pc_small_button_right{
-    display: flex;
-  }
-  #pc_small_button_left{
-    display: flex;
-  }
-}
 
 
-@media (max-width: 400px){
-  #pc-sm{
-    display: none;
-  }
-  #mobile{
-    display: flex;
-  }
-  #pc_small_button_right{
-    display: none;
-  }
-  #pc_small_button_left{
-   
-    display: none;
-  }
-  #mobile_button_right{
-    display: flex;
-  }
-  #mobile_button_left{
-    display: flex;
-  }
-}
+  
 
 `;
 
@@ -300,11 +206,13 @@ height: 3rem;
 background:url(${({background}) => background});;
 
 
+
+
 `;
 
 export const CaruselLeftButton = styled.button<{ background:string}>`
 
-display:flex;
+display: flex;
 position: relative;
 border:none;
 width: 3rem;
@@ -313,15 +221,16 @@ height: 3rem;
 
 background:url(${({background}) => background});
 
-
 `;
 
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
-  position: relative;
+
+  align-items:center;
+   position: relative; */
   width: 100%;
   height: 60%;
-  left:10vh;
+  /* left:10vh; */
 
   `; 

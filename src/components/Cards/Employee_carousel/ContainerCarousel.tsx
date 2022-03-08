@@ -59,8 +59,7 @@ export default function CarouselCont(){
   
     } 
       />
-    <ContainerStyled>
-       <CaruselLeftButton id="pc_small_button_left" background={lArrow}
+      <CaruselLeftButton id="pc_small_button_left" background={lArrow}
       onClick={() => {
         if(pos !== 0){
           showPcSmall?.classList.add("animateLeft");          
@@ -89,8 +88,8 @@ export default function CarouselCont(){
           return
       }
       setPos(pos - 1);}}/>
-
-     
+    <ContainerStyled>
+      
       <CardContainer id="pc">
         
         {images}
@@ -111,7 +110,29 @@ export default function CarouselCont(){
 
       
 
-      <CaruselRightButton id="pc_small_button_right" background={rArrow}
+      
+      
+    </ContainerStyled>
+    <CaruselRightButton id="pc_button_right" background={rArrow}
+  
+      onClick={() => {
+        if(pos !== test.length - 4){
+          showPc?.classList.add("animateRight");
+          setTimeout(() => {showPc?.classList.remove("animateLeft")},1000)
+          setTimeout(() => {showPc?.classList.remove("animateRight")},1000)
+           
+        } 
+        if (pos+3>=test.length-4) {
+          setPos(pos=test.length-4);
+          
+          return
+        } setPos(pos + 4);    
+      }
+    }
+      
+      />
+
+    <CaruselRightButton id="pc_small_button_right" background={rArrow}
       onClick={() => {
         if(pos !== test.length - 2){
           showPcSmall?.classList.add("animateRight");
@@ -144,27 +165,7 @@ export default function CarouselCont(){
       }
       }
       
-      />
-      
-    </ContainerStyled>
-    <CaruselRightButton id="pc_button_right" background={rArrow}
-  
-      onClick={() => {
-        if(pos !== test.length - 4){
-          showPc?.classList.add("animateRight");
-          setTimeout(() => {showPc?.classList.remove("animateLeft")},1000)
-          setTimeout(() => {showPc?.classList.remove("animateRight")},1000)
-           
-        } 
-        if (pos+3>=test.length-4) {
-          setPos(pos=test.length-4);
-          
-          return
-        } setPos(pos + 4);    
-      }
-    }
-      
-      />
+      /> 
     </div>
 
   )

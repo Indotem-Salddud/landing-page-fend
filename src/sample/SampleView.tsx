@@ -1,6 +1,7 @@
 import React from "react";
 import CarouselCont from "../components/Cards/Employee_carousel/ContainerCarousel";
 import "./SampleStyle.css";
+import "../components/Cards/Employee_carousel/CarouselStyle.css";
 
 
 /**
