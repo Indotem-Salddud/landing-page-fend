@@ -160,7 +160,7 @@ export const Tokens = {
     Width: "185.36px",
     Height: "32.58px",
     Top: "20.36px",
-    Margin: "0px 233px",
+    Margin: "0px 233px 15px",
   },
 
   NavbarIcon:{
@@ -170,7 +170,7 @@ export const Tokens = {
     Left: "732px",
     BoxShadow: "-2px 2px 7px rgba(0, 0, 0, 0.16)",
     BorderRadius: "54px",
-    Margin: "0px 40px",
+    Margin: "0px px",
   },
 
 };
