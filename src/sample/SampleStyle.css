@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+    
+}
+
+.mt-3 {
+    margin-top: 3%;
+}
+
+h1 {
+    margin-top: 5%;
+    font-size: 30pt;
+    color: #000;
+    font-weight: bold;
+}
