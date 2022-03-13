@@ -1,10 +1,10 @@
 import React from "react";
 import "./SampleStyle.css";
-import PrimaryButton from "../components/Buttons/Primary/Button.Primary";
+import Press from "../components/Press/Press";
 
 /**
  * ! Sample view project
- * * whitehatdevv - 2022/02/09
+ * * Carlos y Javi - 2022/03/13
  */
 const SampleView: React.FC = () => {
   return (
@@ -12,12 +12,7 @@ const SampleView: React.FC = () => {
       <div className="mt-3">
         <h1>Buttons component</h1>
         <div className="mt-3">
-          <PrimaryButton
-            title="Contact"
-            handleClick={() => {
-              console.log("He clickado en el botón Contacto");
-            }}
-          />
+          <Press />
         </div>
       </div>
     </>
