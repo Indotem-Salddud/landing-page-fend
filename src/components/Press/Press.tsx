@@ -13,69 +13,96 @@ import lanave_color from "../../resources/static/press_images/lanave_color.png";
 import lanave_byn from "../../resources/static/press_images/lanave_byn.png";
 import "../../components/Press/PressStyle.css"
 
-
-
-function changeImg(){
-  const lasextacolor = document.getElementById("lasextacolor");
-  /* lasextacolor?.style.display = "none";  */
-  console.log(lasextacolor)
- 
-  /* lasextabyn.src = {lasexta_color} */
-}
 /**
  * ! Press Component
  * * Carlos y Javi - 2022/03/13
  * @param props {any}
  */
+ let lasextabyn = document.getElementById("lasextabyn");
+ let lasextacont = document.getElementsByClassName("lasextaContainer")[0];
+ /* console.log(lasextabyn) */
+ lasextabyn.addEventListener("mouseenter", (ev)=>{
+  lasextabyn.src = `${lasexta_color}`;
+  lasextabyn.style.width = "90px";
+  lasextabyn.style.height = "115px";
+  lasextacont.style.display = "block";
+ }) 
 
+ lasextabyn.addEventListener("mouseout", (ev)=>{
+  lasextabyn.src = `${lasexta_byn}`;
+  lasextabyn.style.width = "70px";
+  lasextabyn.style.height = "95px";
+  lasextacont.style.display = "none";
+ }) 
+ 
+ let lasextacolor = document.getElementById("lasextacolor");
+ /* console.log(lasextacolor) */
+ 
+ let elmundobyn = document.getElementById("elmundobyn");
+ /* console.log(lasextabyn) */
+ 
+ 
+ let elmundocolor = document.getElementById("efaaaao");
+ /* console.log(lasextacolor) */
+ 
 
-// * Define array data
+let caca = document.getElementsByClassName(".imgContainer")[0];
 
-/* const allDataPress = dataPress.map((info) => {
+/*  caca.addEventListener("mouseenter", (ev)=>{
+  let pointer = ev.target.id;
+  if(pointer === "lasextabyn"){
+    lasextabyn.src = `${lasexta_color}`;
+    lasextabyn.style.width = "90px";
+    lasextabyn.style.height = "115px";
+  } else if(pointer === "elmundobyn"){
+    elmundobyn.src = `${elmundo_color}`;
+    elmundobyn.style.width = "120px";
+    elmundobyn.style.height = "115px";
+  }
+})  */ 
 
-}) */
-console.log(dataPress)
 
 
 export default function Press(){
+
   return (
     <PressStyled>
-    <div className="imgContainer">
-     <img id="lasextacolor" src={lasexta_color} alt="#" />
-     <img id="lasextabyn" src={lasexta_byn} onClick={changeImg} alt="#" />
+      <div className="imgContainer" >
+        <img id="lasextacolor" src={lasexta_color} alt="#" />
+        <img id="lasextabyn" src={lasexta_byn} alt="#" />
 
-      <img src={elmundo_color} alt="#" />
-      <img src={elmundo_byn} alt="#" />
+        <img id="elmundocolor" src={elmundo_color} alt="#" />
+        <img id="elmundobyn" src={elmundo_byn} alt="#" />
 
-      <img src={telemadrid_color} alt="#" />
-      <img src={telemadrid_byn} alt="#" />
+        <img id="telemadridcolor" src={telemadrid_color} alt="#" />
+        <img id="telemadridbyn" src={telemadrid_byn} alt="#" />
 
-      <img src={larazon_color} alt="#" />
-      <img src={larazon_byn} alt="#" />
+        <img id="larazoncolor" src={larazon_color} alt="#" />
+        <img id="larazonbyn" src={larazon_byn} alt="#" />
 
-      <img src={lanave_color} alt="#" />
-      <img src={lanave_byn} alt="#" />
-    </div>
-    <div className="lasextaContainer">
-      <p>{dataPress[0].text}</p>
-      <h3>{dataPress[0].company}</h3>
-    </div>
-    <div className="elmundoContainer">
-      <p>{dataPress[1].text}</p>
-      <h3>{dataPress[1].company}</h3>
-    </div>
-    <div className="telemadridContaiiner">
-      <p>{dataPress[2].text}</p>
-      <h3>{dataPress[2].company}</h3>
-    </div>
-    <div className="larazonContaiiner">
-      <p>{dataPress[3].text}</p>
-      <h3>{dataPress[3].company}</h3>
-    </div>
-    <div className="lanaveContainer">
-      <p>{dataPress[4].text}</p>
-      <h3>{dataPress[4].company}</h3>
-    </div>
+        <img id="lanavecolor" src={lanave_color} alt="#" />
+        <img id="lanavebyn" src={lanave_byn} alt="#" />
+      </div>
+      <div className="lasextaContainer">
+        <p>{dataPress[0].text}</p>
+        <h3>{dataPress[0].company}</h3>
+      </div>
+      <div className="elmundoContainer">
+        <p>{dataPress[1].text}</p>
+        <h3>{dataPress[1].company}</h3>
+      </div>
+      <div className="telemadridContaiiner">
+        <p>{dataPress[2].text}</p>
+        <h3>{dataPress[2].company}</h3>
+      </div>
+      <div className="larazonContaiiner">
+        <p>{dataPress[3].text}</p>
+        <h3>{dataPress[3].company}</h3>
+      </div>
+      <div className="lanaveContainer">
+        <p>{dataPress[4].text}</p>
+        <h3>{dataPress[4].company}</h3>
+      </div>
     
     </PressStyled>
 
