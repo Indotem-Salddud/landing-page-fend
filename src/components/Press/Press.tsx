@@ -19,9 +19,18 @@ import "../../components/Press/PressStyle.css"
  * @param props {any}
  */
  let lasextabyn = document.getElementById("lasextabyn");
+ let elmundobyn = document.getElementById("elmundobyn");
+ let telemadridbyn = document.getElementById("telemadridbyn");
+ let larazonbyn = document.getElementById("larazonbyn");
+ let lanavebyn = document.getElementById("lanavebyn");
  let lasextacont = document.getElementsByClassName("lasextaContainer")[0];
- /* console.log(lasextabyn) */
- lasextabyn.addEventListener("mouseenter", (ev)=>{
+ let elmundocont = document.getElementsByClassName("elmundoContainer")[0];
+ let telemadridcont = document.getElementsByClassName("telemadridContainer")[0];
+ let larazoncont = document.getElementsByClassName("larazonContainer")[0];
+ let lanavecont = document.getElementsByClassName("lanaveContainer")[0];
+
+ /* EFECTO HOVER LA SEXTA */
+  lasextabyn.addEventListener("mouseenter", (ev)=>{
   lasextabyn.src = `${lasexta_color}`;
   lasextabyn.style.width = "90px";
   lasextabyn.style.height = "115px";
@@ -35,20 +44,68 @@ import "../../components/Press/PressStyle.css"
   lasextacont.style.display = "none";
  }) 
  
- let lasextacolor = document.getElementById("lasextacolor");
- /* console.log(lasextacolor) */
- 
- let elmundobyn = document.getElementById("elmundobyn");
- /* console.log(lasextabyn) */
- 
- 
- let elmundocolor = document.getElementById("efaaaao");
- /* console.log(lasextacolor) */
- 
+/* EFECTO HOVER EL MUNDO */
+  elmundobyn.addEventListener("mouseenter", (ev)=>{
+  elmundobyn.src = `${elmundo_color}`;
+  elmundobyn.style.width = "115px";
+  elmundobyn.style.height = "115px";
+  elmundocont.style.display = "block";
+ }) 
 
-let caca = document.getElementsByClassName(".imgContainer")[0];
+ elmundobyn.addEventListener("mouseout", (ev)=>{
+  elmundobyn.src = `${elmundo_byn}`;
+  elmundobyn.style.width = "95px";
+  elmundobyn.style.height = "95px";
+  elmundocont.style.display = "none";
+ })   
 
-/*  caca.addEventListener("mouseenter", (ev)=>{
+/* EFECTO HOVER TELEMADRID*/
+telemadridbyn.addEventListener("mouseenter", (ev)=>{
+  telemadridbyn.src = `${telemadrid_color}`;
+  telemadridbyn.style.width = "155px";
+  telemadridbyn.style.height = "115px";
+  telemadridcont.style.display = "block";
+ }) 
+
+ telemadridbyn.addEventListener("mouseout", (ev)=>{
+  telemadridbyn.src = `${telemadrid_byn}`;
+  telemadridbyn.style.width = "135px";
+  telemadridbyn.style.height = "95px";
+  telemadridcont.style.display = "none";
+ })   
+
+/* EFECTO HOVER LA RAZON*/
+larazonbyn.addEventListener("mouseenter", (ev)=>{
+  larazonbyn.src = `${larazon_color}`;
+  larazonbyn.style.width = "125px";
+  larazonbyn.style.height = "115px";
+  larazoncont.style.display = "block";
+ }) 
+
+ larazonbyn.addEventListener("mouseout", (ev)=>{
+  larazonbyn.src = `${larazon_byn}`;
+  larazonbyn.style.width = "105px";
+  larazonbyn.style.height = "95px";
+  larazoncont.style.display = "none";
+ })   
+
+/* EFECTO HOVER LA NAVE*/
+lanavebyn.addEventListener("mouseenter", (ev)=>{
+  lanavebyn.src = `${lanave_color}`;
+  lanavebyn.style.width = "175px";
+  lanavebyn.style.height = "115px";
+  lanavecont.style.display = "block";
+ }) 
+
+ lanavebyn.addEventListener("mouseout", (ev)=>{
+  lanavebyn.src = `${lanave_byn}`;
+  lanavebyn.style.width = "155px";
+  lanavebyn.style.height = "95px";
+  lanavecont.style.display = "none";
+ })   
+
+
+  /* lasextabyn.addEventListener("click", (ev)=>{
   let pointer = ev.target.id;
   if(pointer === "lasextabyn"){
     lasextabyn.src = `${lasexta_color}`;
@@ -59,7 +116,7 @@ let caca = document.getElementsByClassName(".imgContainer")[0];
     elmundobyn.style.width = "120px";
     elmundobyn.style.height = "115px";
   }
-})  */ 
+})   */
 
 
 
@@ -68,19 +125,14 @@ export default function Press(){
   return (
     <PressStyled>
       <div className="imgContainer" >
-        <img id="lasextacolor" src={lasexta_color} alt="#" />
         <img id="lasextabyn" src={lasexta_byn} alt="#" />
 
-        <img id="elmundocolor" src={elmundo_color} alt="#" />
         <img id="elmundobyn" src={elmundo_byn} alt="#" />
 
-        <img id="telemadridcolor" src={telemadrid_color} alt="#" />
         <img id="telemadridbyn" src={telemadrid_byn} alt="#" />
 
-        <img id="larazoncolor" src={larazon_color} alt="#" />
         <img id="larazonbyn" src={larazon_byn} alt="#" />
 
-        <img id="lanavecolor" src={lanave_color} alt="#" />
         <img id="lanavebyn" src={lanave_byn} alt="#" />
       </div>
       <div className="lasextaContainer">
@@ -91,11 +143,11 @@ export default function Press(){
         <p>{dataPress[1].text}</p>
         <h3>{dataPress[1].company}</h3>
       </div>
-      <div className="telemadridContaiiner">
+      <div className="telemadridContainer">
         <p>{dataPress[2].text}</p>
         <h3>{dataPress[2].company}</h3>
       </div>
-      <div className="larazonContaiiner">
+      <div className="larazonContainer">
         <p>{dataPress[3].text}</p>
         <h3>{dataPress[3].company}</h3>
       </div>
